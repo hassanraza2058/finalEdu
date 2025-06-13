@@ -1,0 +1,303 @@
+/* .live-course-body {
+    background: #111;
+} */
+
+.live-course-section {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 20px;
+}
+
+.live-left {
+    flex: 1;
+    max-width: 600px;
+}
+
+.live-title {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 32px;
+}
+
+.live-badges {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+}
+
+.live-badge {
+    background: #222;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    display: inline-block;
+}
+
+.live-price-row {
+    margin-bottom: 24px;
+}
+
+.live-price-label {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+/* .live-price {
+    color: #ff4500;
+} */
+
+.live-old-price {
+    text-decoration: line-through;
+    color: #aaa;
+    font-size: 1.3rem;
+    margin-left: 10px;
+}
+
+.live-gst {
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.live-discount {
+    color: #ff4500;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.live-buy-btn {
+    background: #ff4500;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 18px 0;
+    width: 220px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+.live-batch {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-top: 8px;
+}
+
+.live-batch-date {
+    color: #ff4500;
+}
+
+.live-right {
+    flex: 1;
+    max-width: 500px;
+}
+
+.live-img-box {
+    background: #222;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.live-img {
+    width: 100%;
+    display: block;
+}
+
+.live-play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.live-info-cards {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.live-info-card {
+    background: #222;
+    color: #fff;
+    padding: 18px 24px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 12px;
+}
+
+.live-highlight {
+    color: #ff4500;
+}
+
+
+.live-section-text h1{
+    font-size: 6rem;
+    color: #ff4500;
+    text-align: center;
+}
+
+.live-section-text h2{
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}   
+
+.live-section-text p{
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 16px;
+}   
+
+.live-success-graph img{
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin: auto;
+    display: block;
+}
+
+
+
+/* AI SECTION STYLES */
+
+.ai-section {
+    margin-top: 5rem;
+    padding: 40px 0 0 0;
+}
+
+.ai-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px 40px 40px;
+}
+
+.ai-header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.ai-main-heading {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.ai-sub-heading {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.webdev-expand-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: color 0.2s;
+}
+
+.webdev-expand-btn:hover {
+    color: #ff4500;
+}
+
+.webdev-chevron {
+    font-size: 1.2rem;
+    margin-left: 2px;
+}
+
+.ai-block {
+    margin-bottom: 40px;
+}
+
+.ai-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 24px;
+}
+
+.ai-list li {
+    color: #bdbdbd;
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    margin-left: 40px;
+    font-weight: 400;
+}
+
+
+
+
+/* .webdev-section {
+    padding: 40px 0 0 0;
+} */
+
+.webdev-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px 40px 40px;
+}
+
+.webdev-header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.webdev-main-heading {
+    color: #fffbe6;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.webdev-sub-heading {
+    color: #fffbe6;
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin: 0 0 0 60px;
+}
+
+.webdev-expand-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: color 0.2s;
+}
+
+.webdev-expand-btn:hover {
+    color: #ff4500;
+}
+
+.webdev-chevron {
+    font-size: 1.2rem;
+    margin-left: 2px;
+}
+
+.webdev-block {
+    margin-bottom: 40px;
+}

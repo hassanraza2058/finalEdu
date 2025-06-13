@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/log-sign.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar flex">
+            <a href="#" class="logo"><img src="imgs/MaazTertechLogoWhite.png" alt=""></a>
+            <div class="nav-right flex">
+                <button class="close-menu" id="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <ul class="nav-links flex">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="course.html">Cources</a></li>
+                    <li><a href="#">Enquiry</a></li>
+                    <li><a href="Live course.html">Live Course</a></li>
+                </ul>
+                <div class="buttons flex">
+                    <a href="login.html" class="primary-button">Log In</a>
+                    <a href="signUp.html" class="secondary-button">Sign Up</a>
+                </div>
+            </div>
+            <button class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="login">
+            <div class="signUp-container">
+                <form action="#" class="login-form">
+                    <button class="cross-button" id="signup-cross-btn"><i class="fa-solid fa-xmark"></i></button>
+                    <h3>SignUp</h3>
+                    <div class="input-container">
+                        <div class="name-row">
+                            <input type="text" placeholder="First-Name" required class="input">
+                            <input type="text" placeholder="Last-Name" required class="input">
+                        </div>
+                        <input type="email" placeholder="Email" required class="input">
+                        <input type=number placeholder="Phone Number" required class="input">
+                        <input type="password" placeholder="Password" required class="input">
+                        <input type="password" placeholder="Confirm Password" required class="input">
+                    </div>
+                    <button class="btn">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+ <div id="enquiry-form-placeholder"></div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

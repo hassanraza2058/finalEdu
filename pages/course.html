@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>courses</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar flex">
+            <a href="#" class="logo"><img src="imgs/MaazTertechLogoWhite.png" alt=""></a>
+            <div class="nav-right flex">
+                <button class="close-menu" id="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <ul class="nav-links flex">
+                   <li><a href="../index.html">Home</a></li>
+                    <li><a href="#">Cources</a></li>
+                     <button id="enquiry-btn">Enquiry</button>
+                    <li><a href="Live course.html">Live Course</a></li>
+                </ul>
+                <div class="buttons flex">
+                   <a href="login.html" class= "primary-button">Log In</a>
+                  <a href="signUp.html" class="secondary-button">Sign Up</a>
+                </div>
+            </div>
+            <button class="hamburger" id="hamburger"> <i class="fa-solid fa-bars"></i> </button>
+        </nav>
+    </header>
+
+    <main>
+       <section class="cource-section">
+        
+            <h1 class="h3-heading">
+                Each course we create is carefully crafted, <br> <span class="highlighted-text">not mass-produced.</span> 
+            </h1>
+            <div class="cards-container flex">
+                <div class="card">
+                    <img src="imgs/FullStack.jpg" alt="Course 1">
+                    <div class="card-content">
+                        <h3>Fullstack Webdevelopment</h3>
+                        <span class="badge lang">HINDI</span>
+                        <p class="price">₹5999 <span class="old-price">₹11999</span> <span class="discount">50%
+                                OFF</span></p>
+                    </div>
+                   <a href="web-Elaboration.html" class="secondary-button">View Details</a>
+                </div>
+                <div class="card">
+                    <img src="imgs/digitalMarketing.jpg" alt="Course 1">
+                    <div class="card-content">
+                        <h3>Digital Marketing</h3>
+                        <span class="badge lang">HINDI</span>
+                        <p class="price">₹5999 <span class="old-price">₹11999</span> <span class="discount">50%
+                                OFF</span></p>
+                    </div>
+                    <a href="digital-Elaboration.html" class="secondary-button">View Details</a>
+                </div>
+                <div class="card">
+                    <img src="imgs/DataScientist.jpg" alt="Course 1">
+                    <div class="card-content">
+                        <h3>Data Science</h3>
+                        <span class="badge lang">HINDI</span>
+                        <p class="price">₹5999 <span class="old-price">₹11999</span> <span class="discount">50%
+                                OFF</span></p>
+                    </div>
+                    <a href="ds-Elaboration.html" class="secondary-button">View Details</a>
+                </div>
+                <div class="card">
+                    <img src="imgs/dsa.jpg" alt="Course 1">
+                    <div class="card-content">
+                        <h3>Data Structure & Algorithm</h3>
+                        <span class="badge lang">HINDI</span>
+                        <p class="price">₹5999 <span class="old-price">₹11999</span> <span class="discount">50%
+                                OFF</span></p>
+                    </div>
+                    <a href="dsa-Elaboration.html" class="secondary-button">View Details</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            
+            <div class="footer-left">
+                <img src="imgs/MaazTertechLogoWhite.png" alt="Maazster-tech" class="mascot" />
+                <p>Let's connect with our socials</p>
+                <div class="social-icons">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-discord"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+
+           
+            <div class="footer-column">
+                <h4>COMPANY</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#" id="support">Support</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="term-condition.html">Terms and Condition</a></li>
+                </ul>
+            </div>
+
+            
+            <div class="footer-column">
+                <h4>COMMUNITY</h4>
+                <ul>
+                    <li><a href="">Inertia</a></li>
+                    <li><a href="">Discord</a></li>
+                </ul>
+            </div>
+
+            
+            <div class="footer-column">
+                <h4>Get In Touch</h4>
+                <ul>
+                    <li>+91 7309557243</li>
+                    <li>+91 7309557243 </li>
+                    <li>hassan@gmail.com</li>
+                    <li>23-B, Indra Nagar Sector <br /> B, Lucknow(UP), 226010</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright © 2025 MaazsterTech.</p>
+        </div>
+    </footer>
+
+     <!-- POP UP FORM ---------------------------------------------   --------------------------------- --------------------->
+
+    <!-- <div class="overlay" id="overlay"></div>
+    <div class="form-container">
+        <div class="form-header">
+            <button class="close-btn" id="close-btn"><i class="fa-solid fa-xmark"></i></button>
+            <h3>Request a Callback</h3>
+            <p>Fill the form we will contact you according <br>
+                to your conveniece</p>
+        </div>
+        <form action="#" class="enquiry-form">
+
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter Your Name" required>
+
+            <label for="number">Phone Number</label>
+            <input type="number" id="number" placeholder="Enter Your Phone Number" required>
+
+            <label for="date">Select Date & Time <span><i class="fa-solid fa-calendar-days"></i></span></label>
+            <input type="datetime-local" id="date" required>
+
+            <label for="option">Enquiry For </label>
+            <select id="option" required class="enquiry-select">
+                <option value="" disabled selected>Select an option</option>
+                <option value="Online-Course">online Course</option>
+                <option value="Offline-Course">Offline Course</option>
+            </select>
+
+            <button type="submit" class="secondary-button btn-more-css">Submit</button>
+
+        </form>
+    </div> -->
+
+
+<div id="enquiry-form-placeholder"></div>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

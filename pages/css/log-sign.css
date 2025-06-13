@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(20px);
+
+}
+
+.login-container {
+    background-color: transparent;
+    height: 350px;
+    width: 300px;
+    border-radius: 6px;
+    padding: 20px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.hide-login-container {
+    display: none;
+    opacity: 0;
+    z-index: -20;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+.login-form h3 {
+    text-align: center;
+    color: #fff;
+}
+
+.cross-button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.login-form .input {
+    padding: 8px 12px;
+    margin-top: 15px;
+    width: 100%;
+    color: #fff;
+    border-radius: 4px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ff4500;
+    outline: none;
+}
+
+.checkbox-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+.checkbox-container>div {
+    display: flex;
+    align-items: center;
+    /* gap: 6px; */
+}
+
+.forgot-password {
+    color: #fff;
+    /* text-decoration: underline; */
+    cursor: pointer;
+
+}
+
+.btn {
+    padding: 6px 12px;
+    border-radius: 12px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #ff4500;
+    margin-top: 15px;
+}
+
+
+/* BELOW SOME CSS IS FOR SIGN UP PAGE--------------------------- */
+
+
+.signUp-container {
+    background-color: transparent;
+    height: 450px;
+    width: 350px;
+    border-radius: 6px;
+    padding: 20px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.hide-signUp-container{
+    display: none;
+}
+
+.name-row {
+    display: flex;
+    gap: 10px;
+}
+
+
+/* ---------------------------------------------- */

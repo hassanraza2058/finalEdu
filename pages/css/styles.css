@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=IBM+Plex+Mono:ital@1&display=swap');
+
+/* resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  min-height: 100vh;
+  color: #fff;
+  background-color: #0b022f;
+  /* background-color: black; */
+  background-image: radial-gradient(ellipse at 80% 40%, rgba(255, 69, 0, 0.1) 0%, transparent 70%),
+    radial-gradient(ellipse at 20% 20%, rgba(255, 69, 0, 0.2) 0%, transparent 60%);
+  background-size: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  padding: 2rem;
+}
+
+:root {
+  --bg-color: #ff4500;
+  --bg-secondary: #0b022f;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  /* display: inline-block; */
+  color: white;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.margin-block {
+  margin-block: 2rem;
+}
+
+.margin-top {
+  margin-top: 2rem;
+}
+
+.margin-top-3 {
+  margin-top: 3rem;
+}
+
+.margin-top-4 {
+  margin-top: 4rem;
+}
+
+/* utility Classes */
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+
+.primary-button {
+  padding: 0.4rem 0.8rem;
+  font-weight: bold;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.secondary-button {
+  padding: 0.4rem 0.8rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  background-color: #ff4500;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* NAVBAR-----------------------------------------------------------------------------------------------*/
+
+.navbar {
+  justify-content: space-between;
+  /* position: relative; */
+}
+
+.logo img {
+  width: 180px;
+  height: auto;
+}
+
+.nav-right,
+.nav-links,
+.buttons {
+  gap: 20px;
+  /* cursor: pointer; */
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+
+.hamburger {
+  display: none;
+  color: #fff;
+  font-size: 2rem;
+  /* padding: 10px; */
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.close-menu {
+  display: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  transition: transform 0.2s ease-in-out;
+}
+
+.hamburger:hover{
+  transform: scale(1.2);
+}
+
+#enquiry-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  text-align: bottom;
+  font-size: 15px;
+  margin-top: 3px;
+}
+
+/* Hero-Section--------------------------------------------------------------*/
+
+.hero-section {
+  min-height: 78vh;
+}
+
+.hero-section,
+.stats {
+  text-align: center;
+  color: white;
+  margin-top: 5rem;
+}
+
+.hero-content h1 {
+  color: white;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.hero-para {
+  font-style: italic;
+  font-size: 1rem;
+  font-family: 'IBM Plex Mono', monospace;
+  margin-top: 1rem;
+}
+
+.highlighted-text {
+  color: var(--bg-color);
+  font-weight: 700;
+}
+
+.explore-btn {
+  margin-block: 3rem;
+  font-size: 1rem;
+  padding: 0.8rem 2rem;
+}
+
+.stats {
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 3.5rem;
+}
+
+
+/*  Featured Video Section---------------------------------------------------------------*/
+
+.featured-video-section {
+  min-height: 70vh;
+  text-align: center;
+}
+
+.featured-video-section h2 {
+  font-weight: 300;
+  font-family: monospace;
+  margin-bottom: 4rem;
+}
+
+.video-container {
+  max-width: 800px;
+  min-width: 300px;
+  margin: auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.btn-container {
+  margin-top: 4rem;
+}
+
+
+/* COURSES SECTION------------------------------------------------------------------------- */
+
+.cource-section {
+  /* min-height: 65vh; */
+  margin-block: 5rem;
+}
+
+.cards-container {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+
+.h3-heading {
+  text-align: center;
+  margin-block: 4rem;
+}
+
+.cards-container {
+  width: 100%;
+}
+
+.card {
+  background-color: #ebe1e1;
+  border-radius: 12px;
+  flex: 0 1 300px;
+  max-width: 280px;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  justify-content: space-between;
+  padding: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  border-radius: 6px;
+  width: 100%;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: black;
+}
+
+.card p {
+  margin: 6px 0;
+  color: black;
+  font-weight: bold;
+}
+
+.price {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-left: 10px;
+}
+
+.discount {
+  background-color: red;
+  padding: 2px 6px;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+.lang {
+  background: #888;
+  color: white;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 0.7rem;
+  margin: 2px 4px 8px 0;
+  border-radius: 3px;
+  color: black;
+}
+
+
+/* COMPANIES SECTION */
+
+.companies-section {
+  text-align: center;
+  padding: 50px 20px;
+  /* margin-top: 4rem; */
+}
+
+
+.highlight {
+  color: var(--bg-color);
+}
+
+.logo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin: 50px 0;
+}
+
+.logo-grid img {
+  max-width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
+.cta button {
+  padding: 12px 24px;
+  background-color: var(--bg-color);
+  border: none;
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* footer-section--------------------------------------- */
+
+.footer {
+  padding: 40px 20px 0;
+  border-top: 1px solid #333;
+  margin-top: 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: 40px;
+}
+
+.footer-left {
+  max-width: 250px;
+}
+
+.footer-left img.mascot {
+  width: 180px;
+  height: auto;
+}
+
+.footer-left p {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
+}
+
+.social-icons i {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.social-icons i:hover {
+  color: #00f4ab;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.footer-column ul li a {
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: orangered;
+}
+
+.footer-bottom p {
+  border-top: 1px solid #333;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  color: #aaa;
+}
+
+
+/* POP UP FORM CSS -------------------------------------*/
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+.showOverlay {
+  z-index: 1;
+  transition: 0.2s ease-in-out;
+}
+
+.form-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 340px;
+  height: 500px;
+  background-color: #0b022f;
+  /* color: #0b022f; */
+  padding: 12px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 0px 10px rgb(247, 246, 246);
+  z-index: 100;
+  border-radius: 8px;
+  opacity: 0;
+  z-index: -1;
+}
+
+.showEnquiryForm {
+  opacity: 1;
+  z-index: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+  padding: 8px 8px;
+  cursor: pointer;
+  z-index: 6;
+}
+
+.form-header h3 {
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.form-header p {
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  margin: 5px 0px;
+}
+
+.enquiry-form input,
+.enquiry-select {
+  width: 100%;
+  padding: 6px 12px;
+  margin: 5px 0px 15px 0px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+
+.enquiry-form input:focus,
+.enquiry-form input:hover {
+  border-color: #ff4500;
+  box-shadow: 0 0 0 2px rgba(255, 69, 0, 0.2);
+  outline: none;
+}
+
+.btn-more-css {
+  width: 100%;
+}

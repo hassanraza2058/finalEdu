@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduTech Website</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="pages/css/styles.css">
+    <link rel="stylesheet" href="pages/css/media-queries.css">
+</head>
+
+<body>
+    <header class="head" id="head">
+        <nav class="navbar flex">
+            <a href="#" class="logo"><img src="pages/imgs/MaazTertechLogoWhite.png" alt=""></a>
+            <div class="nav-right flex">
+                <button class="close-menu" id="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <ul class="nav-links flex">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="pages/course.html">Cources</a></li>
+                    <button id="enquiry-btn">Enquiry</button>
+                    <li><a href="pages/Live course.html">Live Course</a></li>
+                </ul>
+                <!-- <form action="#" class="search-bar">
+                    <input type="text" placeholder="Search Cources">
+                    <button type="submit" class="search-btn">🔍</button>
+                </form> -->
+                <div class="buttons flex">
+                    <a href="pages/login.html" class="primary-button">Log In</a>
+                    <a href="pages/signUp.html" class="secondary-button">Sign Up</a>
+                </div>
+            </div>
+            <button class="hamburger" id="hamburger"><i class="fa-solid fa-bars"></i></button>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section ">
+            <div class="hero-content">
+                <h1>We build coders who can <br> <span class="highlighted-text">solve real-world
+                        problems.</span></h1>
+                <button class="explore-btn secondary-button" id="explore-btn">Explore Programs - Start Your
+                    Journey</button>
+                <!-- <a href="pages/course.html" class="secondary-button">Explore Programs - Start Your Journey</a> -->
+            </div>
+            <p class="hero-para">Join our mission to <span class="highlighted-text"> turn beginners into confident
+                    developers</span> <br> with hands-on training and
+                expert guidance.</p>
+            <div class="stats flex">
+                <div>
+                    <h2>10k+</h2>
+                    <p>Projects Built</p>
+                </div>
+                <div>
+                    <h2>50+</h2>
+                    <p>Mentors</p>
+                </div>
+                <div>
+                    <h2>100k+</h2>
+                    <p>Happy Learners</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-video-section">
+            <h2> Learn smarter, not harder — <br>
+                <span class="highlighted-text">get the concepts, once and for all.</span>
+            </h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/9X-Jw16DsTI" frameborder="0"></iframe>
+            </div>
+            <div class="btn-container">
+                <a href="https://www.youtube.com/@Maazster-tech" class="explore-btn secondary-button">Dive into Free
+                    Learning</a>
+            </div>
+        </section>
+
+
+        <section class="cource-section">
+            <h1 class="h3-heading">Cources Offered</h1>
+            <div class="cards-container flex">
+                <div class="card">
+                    <img src="pages/imgs/FullStack.jpg" alt="Course 1">
+                    <div class="card-content">
+                        <h3>Fullstack Webdevelopment</h3>
+                        <span class="badge lang">HINDI</span>
+                        <p class="price">₹5999 <span class="old-price">₹11999</span> <span class="discount">50%
+                                OFF</span></p>
+                    </div>
+                    <a href="pages/web-Elaboration.html" class="secondary-button">View Details</a>
+                    <!-- <button class="secondary-button">View Details</button> -->
+                </div>
+                <div class="card">
+                    <img src="pages/imgs/digitalMarketing.jpg" alt="Course 1">
+                    <div class="card-content">
+                        <h3>Digital Marketing</h3>
+                        <span class="badge lang">HINDI</span>
+                        <p class="price">₹5999 <span class="old-price">₹11999</span> <span class="discount">50%
+                                OFF</span></p>
+                    </div>
+                    <a href="pages/digital-Elaboration.html" class="secondary-button">View Details</a>
+                </div>
+                <div class="card">
+                    <img src="pages/imgs/DataScientist.jpg" alt="Course 1">
+                    <div class="card-content">
+                        <h3>Data Science</h3>
+                        <span class="badge lang">HINDI</span>
+                        <p class="price">₹5999 <span class="old-price">₹11999</span> <span class="discount">50%
+                                OFF</span></p>
+                    </div>
+                    <a href="pages/ds-Elaboration.html" class="secondary-button">View Details</a>
+                </div>
+                <div class="card">
+                    <img src="pages/imgs/FullStack.jpg" alt="Course 1">
+                    <div class="card-content">
+                        <h3>Data Structure & Algorithm</h3>
+                        <span class="badge lang">HINDI</span>
+                        <p class="price">₹5999 <span class="old-price">₹11999</span> <span class="discount">50%
+                                OFF</span></p>
+                    </div>
+                    <a href="pages/dsa-Elaboration.html" class="secondary-button">View Details</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="companies-section">
+            <h2>
+                Top <span class="highlight">companies</span> our students working with
+            </h2>
+
+            <div class="logo-grid">
+                <img src="pages/imgs/logo1.png" alt="Netlink" />
+                <img src="pages/imgs/logo2.png" alt="Netlink" />
+                <img src="pages/imgs/logo3.png" alt="Netlink" />
+                <img src="pages/imgs/logo4.png" alt="Netlink" />
+                <img src="pages/imgs/logo5.png" alt="Netlink" />
+            </div>
+            <div class="cta">
+                <a href="pages/course.html" class="secondary-button">Explore Courses</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+
+            <div class="footer-left">
+                <img src="pages/imgs/MaazTertechLogoWhite.png" alt="Maazster-tech" class="mascot" />
+                <p>Let's connect with our socials</p>
+                <div class="social-icons">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-discord"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+
+
+            <div class="footer-column">
+                <h4>COMPANY</h4>
+                <ul>
+                    <li><a href="pages/about.html">About Us</a></li>
+                    <li><a href="#" id="support">Support</a></li>
+                    <li><a href="pages/privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="pages/term-condition.html">Terms and Condition</a></li>
+                    
+                </ul>
+            </div>
+
+
+            <div class="footer-column">
+                <h4>COMMUNITY</h4>
+                <ul>
+                    <li><a href="">Inertia</a></li>
+                    <li><a href="">Discord</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Get In Touch</h4>
+                <ul>
+                    <li>+91 7309557243</li>
+                    <li>+91 7309557243 </li>
+                    <li>hassan@gmail.com</li>
+                    <li>23-B, Indra Nagar Sector <br /> B, Lucknow(UP), 226010</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright © 2025 MaazsterTech.</p>
+        </div>
+    </footer>
+
+    <div id="enquiry-form-placeholder"></div>
+
+    <script src="pages/js/script.js"></script>
+    <!-- just for suring that this folder to went to github -->
+</body>
+
+</html>

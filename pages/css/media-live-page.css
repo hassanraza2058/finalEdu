@@ -1,0 +1,216 @@
+/* For screens less than 1024px */
+@media (max-width: 1024px) {
+  .live-course-section {
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px 8px;
+    align-items: stretch;
+  }
+  .live-left,
+  .live-right {
+    max-width: 100%;
+    width: 100%;
+  }
+  .live-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .live-badges {
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .live-badge {
+    padding: 8px 14px;
+    font-size: 1rem;
+  }
+  .live-buy-btn {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 14px 0;
+  }
+  .live-img-box {
+    border-radius: 10px;
+    margin-bottom: 16px;
+  }
+  .live-info-card {
+    padding: 8px 8px;
+    font-size: 14px;
+    min-width: 140px;
+  }
+
+  /* ------------------------------------------------------ */
+  .live-section-text h1 {
+    font-size: 3rem;
+  }
+  .live-section-text h2 {
+    font-size: 2rem;
+  }
+  .live-section-text p {
+    font-size: 1.1rem;
+  }
+  .live-success-graph img {
+    width: 100%;
+  }
+  .ai-container,
+  .webdev-container {
+    padding: 0 10px 20px 10px;
+  }
+  .ai-main-heading,
+  .webdev-main-heading {
+    font-size: 2rem;
+  }
+  .ai-sub-heading,
+  .webdev-sub-heading {
+    font-size: 1.2rem;
+  }
+}
+
+/* For screens less than 767px */
+@media (max-width: 767px) {
+  .live-course-section {
+    gap: 12px;
+    padding: 12px 2vw;
+    margin-top: 1.5rem;
+  }
+  .live-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .live-badges {
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+  .live-badge {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+  }
+  .live-price-label {
+    font-size: 1.2rem;
+  }
+  .live-old-price {
+    font-size: 1rem;
+    margin-left: 4px;
+  }
+  .live-buy-btn {
+    font-size: 1rem;
+    padding: 10px 0;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .live-batch {
+    font-size: 0.95rem;
+  }
+  .live-img-box {
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  .live-info-cards {
+    gap: 8px;
+  }
+  .live-info-card {
+    padding: 8px 8px;
+    font-size: 13px;
+    min-width: 130px;
+  }
+  .live-section-text h1 {
+    font-size: 2rem;
+  }
+  .live-section-text h2 {
+    font-size: 1.1rem;
+  }
+  .live-section-text p {
+    font-size: 0.95rem;
+  }
+  .ai-main-heading,
+  .webdev-main-heading {
+    font-size: 1.2rem;
+  }
+  .ai-sub-heading,
+  .webdev-sub-heading {
+    font-size: 1rem;
+  }
+}
+
+/* For screens less than 479px */
+@media (max-width: 479px) {
+  .live-course-section {
+    gap: 6px;
+    padding: 6px 1vw;
+    margin-top: 1rem;
+  }
+
+  .live-title {
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+  }
+  .live-badges {
+    gap: 3px;
+    margin-bottom: 6px;
+  }
+  .live-badge {
+    padding: 4px 6px;
+    font-size: 0.8rem;
+    border-radius: 4px;
+  }
+  .live-price-label {
+    font-size: 1rem;
+  }
+  .live-old-price {
+    font-size: 0.85rem;
+    margin-left: 2px;
+  }
+  .live-buy-btn {
+    font-size: 0.95rem;
+    padding: 8px 0;
+    width: 100%;
+    margin-bottom: 6px;
+    border-radius: 5px;
+  }
+  .live-batch {
+    font-size: 0.85rem;
+  }
+  .live-img-box {
+    border-radius: 5px;
+    margin-bottom: 6px;
+  }
+  .live-info-cards {
+    gap: 4px;
+  }
+  .live-info-card {
+    padding: 5px 2px;
+    font-size: 10px
+    min-width: 60px;
+    border-radius: 4px;
+  }
+  .live-section-text h1 {
+    font-size: 1.2rem;
+  }
+  .live-section-text h2 {
+    font-size: 0.9rem;
+  }
+  .live-section-text p {
+    font-size: 0.8rem;
+  }
+  .ai-main-heading,
+  .webdev-main-heading {
+    font-size: 1rem;
+  }
+  .ai-sub-heading,
+  .webdev-sub-heading {
+    font-size: 0.85rem;
+  }
+    .webdev-expand-btn, .webdev-chevron{
+     font-size: 14px;
+    }
+ .webdev-sub-heading{
+    margin-left: 25px;
+ }
+ .webdev-block {
+    margin-bottom: 10px;
+}
+.webdev-header-row {
+    margin-bottom: 12px;
+}
+
+}
