@@ -16,12 +16,11 @@ body {
   font-family: 'IBM Plex Sans', sans-serif;
   min-height: 100vh;
   color: #fff;
-  background-color: #0b022f;
-  /* background-color: black; */
+  background-color: #0d0239;
   background-image: radial-gradient(ellipse at 80% 40%, rgba(255, 69, 0, 0.1) 0%, transparent 70%),
     radial-gradient(ellipse at 20% 20%, rgba(255, 69, 0, 0.2) 0%, transparent 60%);
   background-size: 100% 100%;
-  background-size: cover;
+  /* background-size: cover; */
   background-repeat: no-repeat;
   background-clip: padding-box;
   padding: 2rem;
