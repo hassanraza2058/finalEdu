@@ -135,12 +135,51 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 
 
 
+
+
+
 // ---------------------- Enquiry Form --------------------------------------------------------
+
+
 
 // Place this script at the end of your HTML file or in your JS file
 
+// let fetchPath = window.location.pathname.endsWith('index.html') || window.location.pathname === '/'
+//     ? 'pages/enquiry-form.html'
+//     : 'enquiry-form.html';
 
-let fetchPath = window.location.pathname.endsWith('index.html') || window.location.pathname === '/'
+// fetch(fetchPath)
+//     .then(response => response.text())
+//     .then(html => {
+//         document.getElementById('enquiry-form-placeholder').innerHTML = html;
+
+//         let enquirybutton = document.getElementById('enquiry-btn');
+//         if (enquirybutton) {
+//             enquirybutton.addEventListener('click', function () {
+//                 document.querySelector('.nav-right')?.classList.remove('active');
+//                 document.querySelector('.overlay')?.classList.add('showOverlay');
+//                 document.querySelector('.form-container')?.classList.add('showEnquiryForm');
+//             });
+//         }
+
+//         let Enquiryclosebutton = document.getElementById('Enquiry-close-btn');
+//         if (Enquiryclosebutton) {
+//             Enquiryclosebutton.addEventListener('click', function () {
+//                 document.querySelector('.overlay')?.classList.remove('showOverlay');
+//                 document.querySelector('.form-container')?.classList.remove('showEnquiryForm');
+//             });
+//         }
+//         const Support_btn = document.getElementById('support');
+//         if (Support_btn) {
+//             Support_btn.addEventListener('click', function (event) {
+//                 event.preventDefault();
+//                 document.querySelector('.overlay')?.classList.add('showOverlay');
+//                 document.querySelector('.form-container')?.classList.add('showEnquiryForm');
+//             });
+//         }
+//     });
+
+let fetchPath = window.location.pathname.includes('index.html') || window.location.pathname.endsWith('/')
     ? 'pages/enquiry-form.html'
     : 'enquiry-form.html';
 
@@ -165,6 +204,7 @@ fetch(fetchPath)
                 document.querySelector('.form-container')?.classList.remove('showEnquiryForm');
             });
         }
+
         const Support_btn = document.getElementById('support');
         if (Support_btn) {
             Support_btn.addEventListener('click', function (event) {
@@ -174,6 +214,8 @@ fetch(fetchPath)
             });
         }
     });
+
+
 
 
 
