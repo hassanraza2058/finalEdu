@@ -16,15 +16,17 @@ body {
   font-family: 'IBM Plex Sans', sans-serif;
   min-height: 100vh;
   color: #fff;
-  background: 
-    radial-gradient(ellipse at 80% 40%, rgba(255, 69, 0, 0.1) 0%, transparent 70%),
-    radial-gradient(ellipse at 20% 20%, rgba(255, 69, 0, 0.2) 0%, transparent 60%),
-    #0d0239;
+  background-color: #d62425;
+  /* background: radial-gradient(ellipse at 80% 40%, rgb(255 69 0 / 0%) 0%, transparent 70%), */
+   /* radial-gradient(ellipse at 20% 20%, rgb(255 69 0 / 76%) 0%, transparent 60%), #3f1ec2; */
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-clip: padding-box;
   padding: 2rem;
 }
+
+ /* radial-gradient(ellipse at 80% 40%, rgba(255, 69, 0, 0.1) 0%, transparent 70%),
+    radial-gradient(ellipse at 20% 20%, rgba(255, 69, 0, 0.2) 0%, transparent 60%), */
 
 :root {
   --bg-color: #ff4500;
