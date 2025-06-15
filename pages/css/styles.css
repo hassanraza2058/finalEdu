@@ -250,6 +250,36 @@ button {
   margin-block: 5rem;
 }
 
+/* .cards-scroll-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.scroll-btn {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  display: none;
+  
+}
+
+.left-btn {
+  left: 0;
+}
+
+.right-btn {
+  right: 0;
+} */
+
 .cards-container {
   flex-wrap: wrap;
   justify-content: center;
@@ -272,8 +302,8 @@ button {
 .card {
   background-color: #ebe1e1;
   border-radius: 12px;
-  flex: 0 1 300px;
-  max-width: 280px;
+  flex-basis: 280px;
+  max-width: 330px;
   min-width: 260px;
   display: flex;
   flex-direction: column;

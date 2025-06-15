@@ -337,3 +337,18 @@ if (Support_btn) {
     });
 
 }
+
+
+// ----------------------------------SCROLL BUTTON----------------------------------------------
+
+//  const leftBtn = document.querySelector(".left-btn");
+//   const rightBtn = document.querySelector(".right-btn");
+//   const container = document.querySelector(".cards-container");
+
+//   rightBtn.addEventListener("click", () => {
+//     container.scrollBy({ left: 300, behavior: "smooth" });
+//   });
+
+//   leftBtn.addEventListener("click", () => {
+//     container.scrollBy({ left: -300, behavior: "smooth" });
+//   });

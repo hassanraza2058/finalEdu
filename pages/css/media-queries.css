@@ -5,7 +5,7 @@
 
 /* Extra large devices (large desktops) */
 @media (min-width: 1025)(max-width: 1399px) {
- 
+
 
   body {
     padding: 3.4rem;
@@ -22,7 +22,7 @@
 
 /* Small devices (phones, portrait tablets) */
 
-@media (max-width: 767px) {
+@media (max-width: 769px) {
   body {
     padding: 1.4rem;
     font-size: 16px;
@@ -129,6 +129,49 @@
     margin-block: 2rem;
   }
 
+/* .scroll-btn {
+    display: none;
+  } */
+  
+ .cards-container {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #888 transparent; /* For Firefox */
+  justify-content: flex-start;
+}
+
+/* Webkit (Chrome, Edge, Safari) */
+.cards-container::-webkit-scrollbar {
+  height: 6px; /* Show a visible thin scrollbar */
+}
+
+.cards-container::-webkit-scrollbar-track {
+  background: transparent; /* Or a light color */
+}
+
+.cards-container::-webkit-scrollbar-thumb {
+  background: #888;       /* Scrollbar color */
+  border-radius: 10px;
+}
+
+.cards-container::-webkit-scrollbar-thumb:hover {
+  background: #555;       /* Darker on hover */
+}
+
+
+  /* .cards-container::-webkit-scrollbar {
+    display: none;
+  } */
+
+
+  .card {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+    width: 90vw;
+  }
+
   .h3-heading {
     text-align: center;
     margin-top: 0;
@@ -140,14 +183,13 @@
     font-size: 1.2rem;
   }
 
+
   .card p {
     font-size: 0.9rem;
     width: 100%;
   }
 
-  /* .secondary-button {
-    padding: 0.3rem 0.6rem;
-  } */
+
 
   .old-price,
   .discount {
@@ -184,13 +226,6 @@
 
 
 
-/* *********************  MEDIA QUERY FOR SUB PAGES SUCH AS ELABORATION PAGES ******************************************************************** */
-/* --------------------------------- */
-
-
-
-
-  
 }
 
 
@@ -205,7 +240,7 @@
 /* Extra Small devices (phones, < 480px) */
 
 @media (max-width: 479px) {
-  
+
   /* html {
       overflow-x: hidden;
     } */
@@ -217,11 +252,11 @@
 
   /* media query for NAVBAR */
 
-  
-.logo img {
-  width: 150px;
-  height: auto;
-}
+
+  .logo img {
+    width: 150px;
+    height: auto;
+  }
 
   .hamburger,
   .close-menu {
@@ -249,7 +284,7 @@
     padding: 1rem 1rem;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     transition: 0.2s ease-in-out;
-   
+
   }
 
   .active {
@@ -267,10 +302,10 @@
     /* cursor: pointer; */
   }
 
-a,
-button {
-  cursor: pointer;
-}
+  a,
+  button {
+    cursor: pointer;
+  }
 
   /* -------------------------------------------------------------- */
   /* ----------------MEDIA QUERY FOR HERO-SECTION--------------- */
@@ -314,6 +349,24 @@ button {
   .stats p {
     font-size: 1rem;
   }
+
+
+
+  /* ----------------------------------------------------------------- */
+  /* ------------------COURSE-SECTION--------------- */
+
+
+  .cards-container {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    /* scrollbar-width: none; */
+    justify-content: flex-start;
+  }
+
+  /* .card {
+    width: 100vw;
+  } */
+
 
   /* ----------------------------------------------------------- */
   /* ----------------------Featured Section------------- */
@@ -408,7 +461,5 @@ button {
   }
 
 
-  
+
 }
-
-
