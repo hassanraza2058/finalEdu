@@ -81,9 +81,9 @@
 
   /* -------------------------------------------------------------- */
   /* ----------------MEDIA QUERY FOR HERO-SECTION--------------- */
-    .hero-section {
+  .hero-section {
     /* min-height: 50vh; */
-     padding: 1rem 0;
+    padding: 1rem 0;
   }
 
   .hero-section,
@@ -135,36 +135,42 @@
     margin-block: 2rem;
   }
 
-/* .scroll-btn {
+  /* .scroll-btn {
     display: none;
   } */
-  
- .cards-container {
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: thin; /* For Firefox */
-  scrollbar-color: #888 transparent; /* For Firefox */
-  justify-content: flex-start;
-}
 
-/* Webkit (Chrome, Edge, Safari) */
-.cards-container::-webkit-scrollbar {
-  height: 6px; /* Show a visible thin scrollbar */
-}
+  .cards-container {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    /* For Firefox */
+    scrollbar-color: #888 transparent;
+    /* For Firefox */
+    justify-content: flex-start;
+  }
 
-.cards-container::-webkit-scrollbar-track {
-  background: transparent; /* Or a light color */
-}
+  /* Webkit (Chrome, Edge, Safari) */
+  .cards-container::-webkit-scrollbar {
+    height: 6px;
+    /* Show a visible thin scrollbar */
+  }
 
-.cards-container::-webkit-scrollbar-thumb {
-  background: #888;       /* Scrollbar color */
-  border-radius: 10px;
-}
+  .cards-container::-webkit-scrollbar-track {
+    background: transparent;
+    /* Or a light color */
+  }
 
-.cards-container::-webkit-scrollbar-thumb:hover {
-  background: #555;       /* Darker on hover */
-}
+  .cards-container::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Scrollbar color */
+    border-radius: 10px;
+  }
+
+  .cards-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Darker on hover */
+  }
 
 
   /* .cards-container::-webkit-scrollbar {
@@ -205,39 +211,39 @@
   /* companies section */
 
   .logo-grid {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  justify-content: flex-start;
-  gap: 40px;
-  margin: 30px 0;
-}
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    justify-content: flex-start;
+    gap: 40px;
+    margin: 30px 0;
+  }
 
-/* FOOTE SECTION */
+  /* FOOTE SECTION */
 
-.footer-content {
-  gap: 15px;
-}
+  .footer-content {
+    gap: 15px;
+  }
 
-.footer-left img.mascot {
-  width: 160px;
-  height: auto;
-}
+  .footer-left img.mascot {
+    width: 160px;
+    height: auto;
+  }
 
-.footer-left p {
-  font-size: 17px;  
-}
+  .footer-left p {
+    font-size: 17px;
+  }
 
-.social-icons {
-  gap: 12px;
-  font-size: 15px;
-}
+  .social-icons {
+    gap: 12px;
+    font-size: 15px;
+  }
 
-.footer-column ul li {
-  margin-bottom: 4px;
-  font-size: 14px;
-}
+  .footer-column ul li {
+    margin-bottom: 4px;
+    font-size: 14px;
+  }
 
   /* ------------------------------------------------- */
   /* ------------------enquiry form SECTION--------------- */
@@ -355,7 +361,7 @@
 
   .hero-section {
     /* min-height: 50vh; */
-     padding: 1rem 0;
+    padding: 1rem 0;
   }
 
   .hero-section,
@@ -405,6 +411,20 @@
     overflow-x: auto;
     /* scrollbar-width: none; */
     justify-content: flex-start;
+  }
+
+  .card {
+    background-color: #ebe1e1;
+    border-radius: 12px;
+    flex-basis: 260px;
+    max-width: 300px;
+    min-width: 260px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    justify-content: space-between;
+    padding: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
 
   /* .card {
@@ -483,6 +503,7 @@
     align-items: flex-start;
     gap: 20px;
   }
+
   /* ------------------------------------------------- */
   /* ------------------enquiry form SECTION--------------- */
 
