@@ -117,7 +117,7 @@
   /* PARAGRAPH-------------------------------- */
 
   .elaboration-desc {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     max-width: 100%;
     margin-top: 8px;
   }
@@ -155,14 +155,23 @@
     margin-left: 8px;
   }
 
-  .heading-corse-flow h1{
-    font-size: 2rem;
-  }
+  .heading-corse-flow h2 {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
 
-  .hidden-course-flow h2 {
-    font-size: 1.3rem;
+.hidden-course-flow h3{
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-weight: normal;
 
-  }
+}
+
+
 }
 
 /* -------------------------------------------------------------------------------------------- */
@@ -225,40 +234,50 @@
     border-radius: 4px;
   }
 
+/* LOGO SECTION --------------------------------------------------------------------- */
+
+.logo-section {
+    margin-bottom: 0px;
+}
+
+
   /* image-------------------------------------------- */
   .logo-container img {
     width: 160px;
     height: 120px;
   }
+
   .logo-container h1 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
   .logo-container h3 {
-    font-size: 14px;
+    font-size: 16px;
   }
   .course-flow-section {
     padding: 8px 2px;
   }
+
   .hidden-course-flow {
     /* margin-left: 8px; */
   }
 
-  .heading-corse-flow h1{
-    font-size: 1.2rem;
-    width: 70%;
-    line-height: 1;
-    margin-bottom: 5px;
-  }
-
-  .hidden-course-flow h2 {
-    /* margin-top: 10px; */
-    font-size: 14px;
+  .heading-corse-flow h2 {
+    color: #fff;
+    font-size: 1rem;
     font-weight: 600;
-    
-  }
+    margin-bottom: 10px;
+}
+
+.hidden-course-flow h3{
+    color: #fff;
+    font-size: 13px;
+    /* margin-bottom: 10px; */
+    font-weight: normal;
+
+}
 
   .expand-btn, .chevron{
-     font-size: 14px;
+     font-size: 11px;
     }
 
 }
