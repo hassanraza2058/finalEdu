@@ -4,16 +4,21 @@
 
 
 /* Extra large devices (large desktops) */
-@media (min-width: 1025)(max-width: 1399px) {
+/* @media (min-width: 1025)(max-width: 1399px) {
 
 
   body {
     padding: 3.4rem;
     font-size: 30px;
   }
+} */
+
+@media (min-width: 1025px) and (max-width: 1399px) {
+  body {
+    padding: 3.4rem;
+    font-size: 30px;
+  }
 }
-
-
 
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
 /* ---------------------------MEDIA QUERY FOR SCREEN less then 767--------------------------------------------------------------------------------------------------- */
@@ -76,8 +81,9 @@
 
   /* -------------------------------------------------------------- */
   /* ----------------MEDIA QUERY FOR HERO-SECTION--------------- */
-  .hero-section {
-    min-height: 50vh;
+    .hero-section {
+    /* min-height: 50vh; */
+     padding: 1rem 0;
   }
 
   .hero-section,
@@ -95,7 +101,7 @@
   /* ----------------------Featured Section------------- */
 
   .featured-video-section {
-    min-height: 60vh;
+    /* min-height: 60vh; */
     text-align: center;
   }
 
@@ -190,11 +196,48 @@
   }
 
 
-
   .old-price,
   .discount {
     margin-left: 48px;
   }
+
+
+  /* companies section */
+
+  .logo-grid {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  justify-content: flex-start;
+  gap: 40px;
+  margin: 30px 0;
+}
+
+/* FOOTE SECTION */
+
+.footer-content {
+  gap: 15px;
+}
+
+.footer-left img.mascot {
+  width: 160px;
+  height: auto;
+}
+
+.footer-left p {
+  font-size: 17px;  
+}
+
+.social-icons {
+  gap: 12px;
+  font-size: 15px;
+}
+
+.footer-column ul li {
+  margin-bottom: 4px;
+  font-size: 14px;
+}
 
   /* ------------------------------------------------- */
   /* ------------------enquiry form SECTION--------------- */
@@ -311,12 +354,13 @@
   /* ----------------MEDIA QUERY FOR HERO-SECTION--------------- */
 
   .hero-section {
-    min-height: 50vh;
+    /* min-height: 50vh; */
+     padding: 1rem 0;
   }
 
   .hero-section,
   .stats {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 
   .hero-content h1 {
@@ -337,17 +381,17 @@
 
   .stats {
     justify-content: center;
-    gap: 1.2rem;
-    margin-top: 1.5rem;
+    gap: 1.5rem;
+    margin-top: 1.3rem;
   }
 
   .stats h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 0;
   }
 
   .stats p {
-    font-size: 1rem;
+    font-size: 12px;
   }
 
 
@@ -372,7 +416,7 @@
   /* ----------------------Featured Section------------- */
 
   .featured-video-section {
-    min-height: 60vh;
+    /* min-height: 60vh; */
     text-align: center;
   }
 
@@ -380,7 +424,7 @@
     font-weight: 300;
     font-family: monospace;
     font-size: 1.5rem;
-    margin-block: 1.5rem;
+    margin-block: 1rem;
   }
 
   .video-container {
@@ -431,6 +475,14 @@
     margin-left: 48px;
   }
 
+
+  /* FOOTER SECTION */
+
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
   /* ------------------------------------------------- */
   /* ------------------enquiry form SECTION--------------- */
 

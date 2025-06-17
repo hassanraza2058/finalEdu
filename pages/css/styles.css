@@ -167,14 +167,16 @@ button {
 /* Hero-Section--------------------------------------------------------------*/
 
 .hero-section {
-  min-height: 78vh;
+  /* min-height: 78vh; */
+  padding: 2rem 0;
+
 }
 
 .hero-section,
 .stats {
   text-align: center;
   color: white;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .hero-content h1 {
@@ -211,7 +213,7 @@ button {
 /*  Featured Video Section---------------------------------------------------------------*/
 
 .featured-video-section {
-  min-height: 70vh;
+  /* min-height: 70vh; */
   text-align: center;
 }
 
@@ -410,7 +412,7 @@ button {
 
 .footer-content {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   gap: 40px;
   max-width: 1200px;
@@ -444,7 +446,7 @@ button {
 }
 
 .social-icons i:hover {
-  color: #00f4ab;
+  color: orangered;;
 }
 
 .footer-column h4 {
