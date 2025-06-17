@@ -3,15 +3,7 @@
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 
-/* Extra large devices (large desktops) */
-/* @media (min-width: 1025)(max-width: 1399px) {
-
-
-  body {
-    padding: 3.4rem;
-    font-size: 30px;
-  }
-} */
+  
 
 @media (min-width: 1172px) and (max-width: 1399px) {
   body {
@@ -288,18 +280,21 @@
   /* ------------------enquiry form SECTION--------------- */
 
   .form-container {
-    width: 95vw;
-    min-width: 0;
-    max-width: 98vw;
-    height: auto;
+    /* width: 90vw; */
+    /* min-width: 0; */
+    /* max-width: 80vw; */
+    /* height: auto; */
     padding: 16px 8px;
     border-radius: 6px;
   }
 
-  .form-header h3,
-  .form-header p {
+  .form-header h3{
     font-size: 1rem;
   }
+
+   .form-header p{
+    font-size: 14px;
+   }
 
   .enquiry-form input,
   .enquiry-select {
@@ -569,32 +564,28 @@
     margin-bottom: 4px;
     font-size: 12px;
   }
-}
 
-
-  
 
   /* ------------------------------------------------- */
   /* ------------------enquiry form SECTION--------------- */
 
   .form-container {
-    width: 95vw;
-    min-width: 0;
-    max-width: 98vw;
-    height: auto;
+    /* min-width: 0; */
+    /* max-width: 95vw; */
+     /* height: 350px; */
     padding: 16px 8px;
     border-radius: 6px;
   }
 
   .form-header h3,
   .form-header p {
-    font-size: 1rem;
+    font-size: 14px;
   }
 
   .enquiry-form input,
   .enquiry-select {
     font-size: 1rem;
-    padding: 8px 6px;
+    padding: 6px 4px;
   }
 
   .btn-more-css {
@@ -602,7 +593,13 @@
     padding: 10px 0;
 
   }
-
-
-
 }
+
+
+  
+
+
+  
+
+
+

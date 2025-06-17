@@ -519,8 +519,10 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 340px;
-  height: 500px;
+  flex: 1 1 320px;
+  min-width: 300px;
+  max-width: 340px;
+  /* max-height: 500px; */
   background-color: #0b022f;
   /* color: #0b022f; */
   padding: 12px 24px;
