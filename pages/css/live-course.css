@@ -95,8 +95,9 @@
 }
 
 .live-right {
-    flex: 1;
-    max-width: 500px;
+    /* flex: 1; */
+    max-width: 340px;
+    max-height: 340;
 }
 
 .live-img-box {

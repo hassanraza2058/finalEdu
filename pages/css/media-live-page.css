@@ -1,7 +1,7 @@
 /* For screens less than 1024px */
 @media (max-width: 1024px) {
   .live-course-section {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 24px;
     padding: 32px 8px;
     align-items: stretch;
@@ -133,28 +133,30 @@
 }
 
 /* For screens less than 479px */
+
 @media (max-width: 479px) {
   .live-course-section {
     gap: 6px;
     padding: 6px 1vw;
-    margin-top: 1rem;
+    margin-top: 3rem;
   }
 
   .live-title {
-    font-size: 1.2rem;
+    font-size: 2.3rem;
     margin-bottom: 16px;
   }
+
   .live-badges {
     gap: 3px;
-    margin-bottom: 6px;
+    margin-bottom: 1rem;
   }
   .live-badge {
     padding: 4px 6px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     border-radius: 4px;
   }
   .live-price-label {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .live-old-price {
     font-size: 0.85rem;
@@ -164,7 +166,7 @@
     font-size: 0.95rem;
     padding: 8px 0;
     width: 100%;
-    margin-bottom: 6px;
+    margin-bottom: 1.5rem;
     border-radius: 5px;
   }
   .live-batch {
@@ -175,23 +177,31 @@
     margin-bottom: 6px;
   }
   .live-info-cards {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
     gap: 4px;
   }
   .live-info-card {
     padding: 5px 2px;
-    font-size: 10px
-    min-width: 60px;
+    font-size: 1rem;
+    /* min-width: 60px; */
     border-radius: 4px;
   }
   .live-section-text h1 {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
   }
   .live-section-text h2 {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .live-section-text p {
-    font-size: 0.8rem;
+    font-size: 1rem;
+    line-height: normal;
   }
+.live-success-graph{
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
   .ai-main-heading,
   .webdev-main-heading {
     font-size: 1rem;
