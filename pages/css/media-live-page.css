@@ -1,16 +1,18 @@
 /* For screens less than 1024px */
 @media (max-width: 1024px) {
   .live-course-section {
-    flex-direction: column-reverse;
+    /* flex-direction: column-reverse; */
     gap: 24px;
     padding: 32px 8px;
-    align-items: stretch;
+    /* align-items: stretch; */
+    align-items: center;
   }
-  .live-left,
+
   .live-right {
-    max-width: 100%;
+    max-width: 50%;
     width: 100%;
   }
+
   .live-title {
     font-size: 2rem;
     margin-bottom: 20px;
@@ -66,14 +68,25 @@
 }
 
 /* For screens less than 767px */
-@media (max-width: 767px) {
+@media (max-width: 769px) {
   .live-course-section {
+    flex-direction: column-reverse;
     gap: 12px;
     padding: 12px 2vw;
-    margin-top: 1.5rem;
+    margin-top: 6rem;
+  }
+
+  .live-left {
+    max-width: 85%;
+    width: 100%;
+    /* margin-bottom: 20px; */
+  }
+  .live-right {
+    max-width: 85%;
+    width: 100%;
   }
   .live-title {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     margin-bottom: 10px;
   }
   .live-badges {
@@ -141,8 +154,17 @@
     margin-top: 3rem;
   }
 
+   .live-left {
+    max-width: 100%;
+    width: 100%;
+    /* margin-bottom: 20px; */
+  }
+  .live-right {
+    max-width: 100%;
+    width: 100%;
+  }
   .live-title {
-    font-size: 2.3rem;
+    font-size: 2rem;
     margin-bottom: 16px;
   }
 

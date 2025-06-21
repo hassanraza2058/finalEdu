@@ -96,7 +96,7 @@
 
 .live-right {
     /* flex: 1; */
-    max-width: 340px;
+    max-width: 600px;
     max-height: 340;
 }
 
@@ -141,27 +141,27 @@
 }
 
 
-.live-section-text h1{
+.live-section-text h1 {
     font-size: 6rem;
     color: #ff4500;
     text-align: center;
 }
 
-.live-section-text h2{
+.live-section-text h2 {
     font-size: 3rem;
     color: #fff;
     text-align: center;
     margin-top: 10px;
-}   
+}
 
-.live-section-text p{
+.live-section-text p {
     font-size: 1.5rem;
     color: #fff;
     text-align: center;
     margin-top: 16px;
-}   
+}
 
-.live-success-graph img{
+.live-success-graph img {
     width: 80%;
     height: auto;
     border-radius: 10px;

@@ -220,26 +220,26 @@ fetch(fetchPath)
 
 
 
-
 // ---------------------- Login Close to hide ----------------------
+//  functio ( this funtion is for only to make the whole program in single line) {
+// // let logincrossbutton = document.getElementById('login-cross-btn');
+// // if (logincrossbutton) {
+// //     logincrossbutton.addEventListener('click', function () {
+// //         document.querySelector('.login-container')?.classList.add('hide-login-container');
+// //         console.log("login cross found?", logincrossbutton);
+// //     });
+// // }
 
-// let logincrossbutton = document.getElementById('login-cross-btn');
-// if (logincrossbutton) {
-//     logincrossbutton.addEventListener('click', function () {
-//         document.querySelector('.login-container')?.classList.add('hide-login-container');
-//         console.log("login cross found?", logincrossbutton);
-//     });
-// }
+// // ---------------------- Sign Up Close to hide----------------------
 
-// ---------------------- Sign Up Close to hide----------------------
-
-// let signupcrossbutton = document.getElementById('signup-cross-btn');
-// if (signupcrossbutton) {
-//     signupcrossbutton.addEventListener('click', function () {
-//         document.querySelector('.signUp-container')?.classList.add('hide-signUp-container');
-//         console.log("signup cross found?", signupcrossbutton);
-//     });
-// }
+// // let signupcrossbutton = document.getElementById('signup-cross-btn');
+// // if (signupcrossbutton) {
+// //     signupcrossbutton.addEventListener('click', function () {
+// //         document.querySelector('.signUp-container')?.classList.add('hide-signUp-container');
+// //         console.log("signup cross found?", signupcrossbutton);
+// //     });
+// // }
+//  }
 
 
 let logincrossbutton = document.getElementById('login-cross-btn');
@@ -264,6 +264,8 @@ if (signupcrossbutton) {
 
 
 //index---------Explore Programs - Start Your Journey btn--------------------
+
+
 
 let exploreBUTTON = document.getElementById('explore-btn');
 if (exploreBUTTON) {
@@ -342,17 +344,19 @@ if (Support_btn) {
 
 // ----------------------------------SCROLL BUTTON----------------------------------------------
 
-//  const leftBtn = document.querySelector(".left-btn");
-//   const rightBtn = document.querySelector(".right-btn");
-//   const container = document.querySelector(".cards-container");
+// const leftBtn = document.querySelector(".left-btn");
+// const rightBtn = document.querySelector(".right-btn");
+// const container = document.querySelector(".cards-container");
 
-//   rightBtn.addEventListener("click", () => {
+// rightBtn.addEventListener("click", () => {
 //     container.scrollBy({ left: 300, behavior: "smooth" });
-//   });
+// });
 
-//   leftBtn.addEventListener("click", () => {
+// leftBtn.addEventListener("click", () => {
 //     container.scrollBy({ left: -300, behavior: "smooth" });
-//   });
+// });
+
+
 
 
 
@@ -377,44 +381,44 @@ document.addEventListener("DOMContentLoaded", function () {
                 confirmPassword: document.getElementById("confirm-password")
             };
 
-            // Clear all previous error messages
+
             document.querySelectorAll(".error-msg").forEach(el => el.textContent = "");
 
             let hasError = false;
 
-            // Validate first name
+
             if (fields.firstName.value.trim().length < 2) {
                 document.getElementById("first-name-error").textContent = "First name must be at least 2 characters.";
                 hasError = true;
             }
 
-            // Validate last name
+
             if (fields.lastName.value.trim().length < 2) {
                 document.getElementById("last-name-error").textContent = "Last name must be at least 2 characters.";
                 hasError = true;
             }
 
-            // Validate email
+
             const emailValue = fields.email.value.trim();
             if (!emailValue.includes("@") || !emailValue.includes(".")) {
                 document.getElementById("email-error").textContent = "Please enter a valid email address.";
                 hasError = true;
             }
 
-            // Validate phone
+
             const phoneValue = fields.phone.value.trim();
             if (phoneValue.length !== 10 || isNaN(phoneValue)) {
                 document.getElementById("phone-error").textContent = "Phone number must be 10 digits.";
                 hasError = true;
             }
 
-            // Validate password
+
             if (fields.password.value.length < 6) {
                 document.getElementById("password-error").textContent = "Password must be at least 6 characters.";
                 hasError = true;
             }
 
-            // Validate confirm password
+
             if (fields.password.value !== fields.confirmPassword.value) {
                 document.getElementById("confirm-password-error").textContent = "Passwords do not match.";
                 hasError = true;
@@ -422,7 +426,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (!hasError) {
                 alert("SignUp successful!");
-                // form.submit(); // Enable when ready
+                form.submit();
             }
         });
     }
@@ -433,6 +437,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // log in form validation
 
 document.addEventListener("DOMContentLoaded", function () {
+
     const loginContainer = document.querySelector(".login-container");
     const loginForm = document.querySelector(".login-form");
 
@@ -441,26 +446,25 @@ document.addEventListener("DOMContentLoaded", function () {
         const passwordInput = document.getElementById("password");
         const errorSpans = document.querySelectorAll(".login-form .error-msg");
 
+
+        const ADMIN_USERNAME = 'admin';
+        const ADMIN_PASSWORD = 'admin123';
+
         loginForm.addEventListener("submit", function (e) {
-            e.preventDefault(); // Stop form from submitting immediately
+            e.preventDefault();
 
-            // Clear previous error messages
             errorSpans.forEach(span => span.textContent = "");
-
             let hasError = false;
 
-            if (usernameInput.value.trim() !== "admin@123") {
-                errorSpans[0].textContent = "* Username is wrong";
-                hasError = true;
-            }
-
-            if (passwordInput.value.trim() !== "admin123") {
-                errorSpans[1].textContent = "* Password is wrong";
-                hasError = true;
-            }
 
             if (!hasError) {
-                loginForm.submit(); // No error — allow form to submit
+                if (usernameInput.value.trim() === ADMIN_USERNAME
+                    && passwordInput.value.trim() === ADMIN_PASSWORD) {
+                    loginForm.submit();
+                }
+                else {
+                    errorSpans[1].textContent = '* Invalid username or password';
+                }
             }
         });
     }
@@ -469,5 +473,49 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+// -------------------in belwo i there is an empty chekin also present---------------------
 
+// document.addEventListener("DOMContentLoaded", function () {
+//     const loginContainer = document.querySelector(".login-container");
+//     const loginForm = document.querySelector(".login-form");
 
+//     if (loginContainer && loginForm) {
+//         const usernameInput = document.getElementById("username");
+//         const passwordInput = document.getElementById("password");
+//         const errorSpans = document.querySelectorAll(".login-form .error-msg");
+
+//         const ADMIN_USERNAME = 'admin';
+//         const ADMIN_PASSWORD = 'admin123';
+
+//         loginForm.addEventListener("submit", function (e) {
+//             e.preventDefault();
+
+//             // Clear all error messages
+//             errorSpans.forEach(span => span.textContent = "");
+//             let hasError = false;
+
+//             // Empty field validation
+//             if (usernameInput.value.trim() === "") {
+//                 errorSpans[0].textContent = "* Username is required";
+//                 hasError = true;
+//             }
+
+//             if (passwordInput.value.trim() === "") {
+//                 errorSpans[1].textContent = "* Password is required";
+//                 hasError = true;
+//             }
+
+//             // Only check credentials if no empty field error
+//             if (!hasError) {
+//                 if (
+//                     usernameInput.value.trim() === ADMIN_USERNAME &&
+//                     passwordInput.value.trim() === ADMIN_PASSWORD
+//                 ) {
+//                     loginForm.submit();
+//                 } else {
+//                     errorSpans[1].textContent = '* Invalid username or password';
+//                 }
+//             }
+//         });
+//     }
+// });
