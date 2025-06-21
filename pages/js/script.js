@@ -1,6 +1,7 @@
 // // --------------------------Index Navbar JS code-----------------
 // // ------THE BELOW CODE WILL WORK BUT IT ONLY CLOSE WHEN I WILL CLICK ON CROSS BTN , AND WHEN YOU WILL SCROLL IT WILL NOT LOOK GOOD-----------------
 
+
 // // let hamburger = document.querySelector('#hamburger');
 // // let crossbutton = document.getElementById('close-btn');
 // // let head = document.getElementById('head');
@@ -352,3 +353,121 @@ if (Support_btn) {
 //   leftBtn.addEventListener("click", () => {
 //     container.scrollBy({ left: -300, behavior: "smooth" });
 //   });
+
+
+
+
+// ----------------------------------FORM VALIDATION -----------------------------------------------------
+
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector(".login-form");
+    const signUpContainer = document.querySelector(".signUp-container");
+
+    if (signUpContainer && form) {
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            // Get all inputs
+            const fields = {
+                firstName: document.getElementById("first-name"),
+                lastName: document.getElementById("last-name"),
+                email: document.getElementById("email"),
+                phone: document.getElementById("phone"),
+                password: document.getElementById("password"),
+                confirmPassword: document.getElementById("confirm-password")
+            };
+
+            // Clear all previous error messages
+            document.querySelectorAll(".error-msg").forEach(el => el.textContent = "");
+
+            let hasError = false;
+
+            // Validate first name
+            if (fields.firstName.value.trim().length < 2) {
+                document.getElementById("first-name-error").textContent = "First name must be at least 2 characters.";
+                hasError = true;
+            }
+
+            // Validate last name
+            if (fields.lastName.value.trim().length < 2) {
+                document.getElementById("last-name-error").textContent = "Last name must be at least 2 characters.";
+                hasError = true;
+            }
+
+            // Validate email
+            const emailValue = fields.email.value.trim();
+            if (!emailValue.includes("@") || !emailValue.includes(".")) {
+                document.getElementById("email-error").textContent = "Please enter a valid email address.";
+                hasError = true;
+            }
+
+            // Validate phone
+            const phoneValue = fields.phone.value.trim();
+            if (phoneValue.length !== 10 || isNaN(phoneValue)) {
+                document.getElementById("phone-error").textContent = "Phone number must be 10 digits.";
+                hasError = true;
+            }
+
+            // Validate password
+            if (fields.password.value.length < 6) {
+                document.getElementById("password-error").textContent = "Password must be at least 6 characters.";
+                hasError = true;
+            }
+
+            // Validate confirm password
+            if (fields.password.value !== fields.confirmPassword.value) {
+                document.getElementById("confirm-password-error").textContent = "Passwords do not match.";
+                hasError = true;
+            }
+
+            if (!hasError) {
+                alert("SignUp successful!");
+                // form.submit(); // Enable when ready
+            }
+        });
+    }
+
+});
+
+
+// log in form validation
+
+document.addEventListener("DOMContentLoaded", function () {
+    const loginContainer = document.querySelector(".login-container");
+    const loginForm = document.querySelector(".login-form");
+
+    if (loginContainer && loginForm) {
+        const usernameInput = document.getElementById("username");
+        const passwordInput = document.getElementById("password");
+        const errorSpans = document.querySelectorAll(".login-form .error-msg");
+
+        loginForm.addEventListener("submit", function (e) {
+            e.preventDefault(); // Stop form from submitting immediately
+
+            // Clear previous error messages
+            errorSpans.forEach(span => span.textContent = "");
+
+            let hasError = false;
+
+            if (usernameInput.value.trim() === "") {
+                errorSpans[0].textContent = "* Username is required";
+                hasError = true;
+            }
+
+            if (passwordInput.value.trim() === "") {
+                errorSpans[1].textContent = "* Password is required";
+                hasError = true;
+            }
+
+            if (!hasError) {
+                loginForm.submit(); // No error — allow form to submit
+            }
+        });
+    }
+});
+
+
+
+
+
+

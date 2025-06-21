@@ -22,7 +22,7 @@
                 <ul class="nav-links flex">
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="course.html">Cources</a></li>
-                     <button id="enquiry-btn">Enquiry</button>
+                    <button id="enquiry-btn">Enquiry</button>
                     <li><a href="Live course.html">Live Course</a></li>
                 </ul>
                 <div class="buttons flex">
@@ -39,27 +39,52 @@
     <main>
         <section class="login">
             <div class="signUp-container">
-                <form action="#" class="login-form">
+                <form action="#" class="login-form" novalidate>
                     <button class="cross-button" id="signup-cross-btn"><i class="fa-solid fa-xmark"></i></button>
                     <h3>SignUp</h3>
+
                     <div class="input-container">
                         <div class="name-row">
-                            <input type="text" placeholder="First-Name" required class="input">
-                            <input type="text" placeholder="Last-Name" required class="input">
+                            <div class="field-group">
+                                <input type="text" placeholder="First Name" class="input" id="first-name">
+                                <div class="error-msg" id="first-name-error"></div>
+                            </div>
+                            <div class="field-group">
+                                <input type="text" placeholder="Last Name" class="input" id="last-name">
+                                <div class="error-msg" id="last-name-error"></div>
+                            </div>
                         </div>
-                        <input type="email" placeholder="Email" required class="input">
-                        <input type=number placeholder="Phone Number" required class="input">
-                        <input type="password" placeholder="Password" required class="input">
-                        <input type="password" placeholder="Confirm Password" required class="input">
+
+                        <div class="field-group">
+                            <input type="email" placeholder="Email" class="input" id="email">
+                            <div class="error-msg" id="email-error"></div>
+                        </div>
+
+                        <div class="field-group">
+                            <input type="number" placeholder="Phone Number" class="input" id="phone">
+                            <div class="error-msg" id="phone-error"></div>
+                        </div>
+
+                        <div class="field-group">
+                            <input type="password" placeholder="Password" class="input" id="password">
+                            <div class="error-msg" id="password-error"></div>
+                        </div>
+
+                        <div class="field-group">
+                            <input type="password" placeholder="Confirm Password" class="input" id="confirm-password">
+                            <div class="error-msg" id="confirm-password-error"></div>
+                        </div>
                     </div>
-                    <button class="btn">Submit</button>
+
+                    <button class="btn" type="submit">Submit</button>
                 </form>
             </div>
         </section>
+
     </main>
 
- <div id="enquiry-form-placeholder"></div>
- <script src="js/script.js"></script>
+    <div id="enquiry-form-placeholder"></div>
+    <script src="js/script.js"></script>
 
 </body>
 

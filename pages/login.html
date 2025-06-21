@@ -23,7 +23,7 @@
                 <ul class="nav-links flex">
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="course.html">Cources</a></li>
-                     <button id="enquiry-btn">Enquiry</button>
+                    <button id="enquiry-btn">Enquiry</button>
                     <li><a href="Live course.html">Live Course</a></li>
                 </ul>
                 <div class="buttons flex">
@@ -40,12 +40,15 @@
     <main>
         <section class="login">
             <div class="login-container">
-                <form action="#" class="login-form">
+                <h4></h4>
+                <form action="FormComplition.html" class="login-form" novalidate>
                     <button class="cross-button" id="login-cross-btn"><i class="fa-solid fa-xmark"></i></button>
                     <h3>Login</h3>
                     <div class="input-container">
-                        <input type="text" placeholder="Username" required class="input">
-                        <input type="password" placeholder="Password" required class="input">
+                        <input type="text" placeholder="Username" required class="input" id="username">
+                        <span class="error-msg"></span>
+                        <input type="password" placeholder="Password" required class="input" id="password">
+                        <span class="error-msg"></span>
                     </div>
                     <div class="checkbox-container">
                         <div>
@@ -54,17 +57,17 @@
                         </div>
                         <a href="#" class="forgot-password">Forgot Password</a>
                     </div>
-                    <button class="btn">Login</button>
+                    <button class="btn" type="submit">Login</button>
                 </form>
             </div>
         </section>
     </main>
 
-   <div id="enquiry-form-placeholder"></div>
+    <div id="enquiry-form-placeholder"></div>
 
-
-    <script src="js/script.js"></script>
+     <script src="js/script.js"></script>
     
+
 
 </body>
 

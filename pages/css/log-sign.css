@@ -119,3 +119,15 @@
 
 
 /* ---------------------------------------------- */
+
+
+.error-msg {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 4px;
+}
+.field-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
