@@ -449,13 +449,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
             let hasError = false;
 
-            if (usernameInput.value.trim() === "") {
-                errorSpans[0].textContent = "* Username is required";
+            if (usernameInput.value.trim() !== "admin@123") {
+                errorSpans[0].textContent = "* Username is wrong";
                 hasError = true;
             }
 
-            if (passwordInput.value.trim() === "") {
-                errorSpans[1].textContent = "* Password is required";
+            if (passwordInput.value.trim() !== "admin123") {
+                errorSpans[1].textContent = "* Password is wrong";
                 hasError = true;
             }
 
