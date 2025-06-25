@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Course</title>
+    <title>Course Language</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -45,42 +45,31 @@
     <main class="container">
         <section class="hero-section">
             <div class="hero-section-div1">
-                <h3>Course</h3>
-                <div class="div1-links">
+                <h3>Course Language</h3>
+                <!-- <div class="div1-links">
                     <a href="">Dashboard</a>
-                    <a href="">Course List </a>
-                </div>
+                    <a href="">Category List </a>
+                </div> -->
             </div>
-
-            <div class="hero-section-div2">
-                <input type="text" placeholder="Search" />
-                <input type="date" placeholder="Date" />
-
-                <select>
-                    <option>Category</option>
-                </select>
-                <select>
-                    <option>Instructor</option>
-                </select>
-                <select>
-                    <option>Approval Status</option>
-                </select>
+            
+                <button class="lang-list-btn"> <i class="fa-solid fa-list"></i>Course Language list</button>
+        
+            
+            <div class="hero-section-div2 courseLanguagediv2">
+               <p>Name*</p>
+                <input type="text" placeholder="Text Language" id="name"> 
+                <p>Status*</p>
                 <select>
                     <option>Status</option>
-
-                </select>
-                <select>
-                    <option>Order By</option>
-                </select>
-                <select>
-                    <option>Per Page</option>
                 </select>
             </div>
         </section>
     </main>
 
-    <aside class="sidebar">
 
+
+    
+    <aside class="sidebar">
 
         <button class="close-menu" id="close-btn">
             <i class="fa-solid fa-xmark"></i>
@@ -99,9 +88,9 @@
         </div>
         
         <div class="submenu">
-            <a href="DashCousrse.html">Courses</a>
+             <a href="../Course/DashCousrse.html">Courses</a>
             <a href="../CourseCategory/category.html">Categories</a>
-            <a href="../courseLanguage/courseLanguage.html">Languages</a>
+            <a href="courseLanguage.html">Languages</a>
             <a href="#">Levels</a>
             <a href="#">Course Reviews</a>
             <a href="#">Course Delete Requests</a>
