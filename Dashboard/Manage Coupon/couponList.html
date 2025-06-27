@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Category Course</title>
+    <title>Manage Coupon List</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -45,7 +45,7 @@
     <main class="container">
         <section class="hero-section">
             <div class="hero-section-div1">
-                <h3>Category List</h3>
+                <h3>Coupon List</h3>
                 <div class="div1-links">
                     <a href="">Dashboard</a>
                     <a href="">Category List </a>
@@ -53,17 +53,26 @@
             </div>
 
             <div class="hero-section-div2">
-                <input type="text" placeholder="Search"> 
-                <select>
-                    <option> Select Status</option>
+              <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>SN</th>
+          <th>Coupon Code</th>
+          <th>Min Price</th>
+          <th>Offer</th>
+          <th>End time</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+    </table>
 
-                </select>
-                <select>
-                    <option>Order By</option>
-                </select>
-                <select>
-                    <option>Per Page</option>
-                </select>
+    <div class="no-data">
+      <img src="no-data.png" alt="No Data" />
+      <p>No data found!</p>
+    </div>
+  </div>
             </div>
         </section>
     </main>

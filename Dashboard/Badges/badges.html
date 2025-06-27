@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Badges</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="left-nav">
+        <button class="hamburger"><i class="fa-solid fa-bars"></i> </button>
+        <select class="language-select">
+          <option value="en">English</option>
+          <option value="hi">Hindi</option>
+          <option value="fr">French</option>
+        </select>
+        <select class="currency">
+          <option value="hi">$-USD</option>
+          <option value="en">₹-Rupee</option>
+          <option value="fr">Riyal</option>
+        </select>
+      </div>
+      <div class="right-nav">
+        <a href="" class="visti-website"> <i class="fa-solid fa-house"></i> <span class="nav-text">Visit
+            Website</span></a>
+        <div class="user-profile">
+          <img src="../../pages/imgs/pfp.jpg" alt="User photo">
+          <div>
+            <span class="nav-text"> Hassan </span>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero-section">
+      <div class="hero-section-div1">
+        <h3>Instructor Badges</h3>
+        <div class="div1-links">
+          <a href="">Dashboard</a>
+          <a href="">Course List </a>
+        </div>
+      </div>
+
+      <div class="hero-section-div2">
+
+        <aside class="sidebar2">
+          <h3>Instructor Badges</h3>
+          <ul>
+            <li>Registration Age Badge</li>
+            <li>Course Count Badge</li>
+            <li>Course Rating Badge</li>
+            <li>Course Enroll Badge</li>
+          </ul>
+        </aside>
+
+        <div class="badge-card">
+          <h4>Badge One</h4>
+          <label>Badge Image<span>*</span></label>
+          <div class="badge-image">
+            <img src="badge1.png" alt="Badge 1" />
+          </div>
+          <label>Name</label>
+          <input type="text" value="Badge 1" class="input-badge"/>
+          <label>From Day<span>*</span></label>
+          <input type="number" value="1" class="input-badge" />
+          <label>To Day<span>*</span></label>
+          <input type="number" value="2" class="input-badge"/>
+          <button class="Save-btn">Save</button>
+        </div>
+
+        <div class="badge-card">
+          <h4>Badge Two</h4>
+          <label>Badge Image<span>*</span></label>
+          <div class="badge-image">
+            <img src="badge2.png" alt="Badge 2" />
+          </div>
+          <label>Name</label>
+          <input type="text" value="badge 2" class="input-badge"/>
+          <label>From Day<span>*</span></label>
+          <input type="number" value="3" class="input-badge"/>
+          <label>To Day<span>*</span></label>
+          <input type="number" value="4" class="input-badge" />
+          <button class="Save-btn">Save</button>
+        </div>
+
+        <div class="badge-card">
+          <h4>Badge Three</h4>
+          <label>Badge Image<span>*</span></label>
+          <div class="badge-image">
+            <img src="badge3.png" alt="Badge 3" />
+          </div>
+          <label>Name</label>
+          <input type="text" value="Badge 3" class="input-badge"/>
+          <label>From Day<span>*</span></label>
+          <input type="number" value="5" class="input-badge"/>
+          <label>To Day<span>*</span></label>
+          <input type="number" value="6" class="input-badge"/>
+          <button class="Save-btn">Save</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <aside class="sidebar">
+
+
+    <button class="close-menu" id="close-btn">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <div class="logo">
+      <img src="../../pages/imgs/maazsterblack.png" alt="Logo" />
+    </div>
+
+    <div class="menu-item"><i class="fa fa-home"></i> Dashboard</div>
+
+    <div class="section-title">Manage Contents</div>
+
+    <div class="menu-item expand" onclick="this.classList.toggle('expand')">
+      <i class="fa fa-book"></i> Manage Courses <span class="arrow">&#9662;</span>
+    </div>
+
+    <div class="submenu">
+      <a href="DashCousrse.html">Courses</a>
+      <a href="../CourseCategory/category.html">Categories</a>
+      <a href="../courseLanguage/courseLanguage.html">Languages</a>
+      <a href="#">Levels</a>
+      <a href="../courseReview/review1.html">Course Reviews</a>
+      <a href="#">Course Delete Requests</a>
+    </div>
+
+    <div class="menu-item"><i class="fa fa-certificate"></i> Certificate Builder</div>
+    <div class="menu-item"><i class="fa fa-id-badge"></i> Badges</div>
+    <div class="menu-item"><i class="fa fa-blog"></i> Manage Blogs <span class="arrow">&#9656;</span></div>
+
+    <div class="section-title">Manage Orders</div>
+
+    <div class="menu-item"><i class="fa fa-box"></i> Manage Order <span class="arrow">&#9656;</span></div>
+    <div class="menu-item"><i class="fa fa-tags"></i> Manage Coupon <span class="arrow">&#9656;</span></div>
+    <div class="menu-item">
+      <i class="fa fa-money-bill"></i> Withdraw Payment
+      <span class="dot"></span>
+    </div>
+
+    <div class="section-title">Manage Users</div>
+
+    <div class="menu-item">
+      <i class="fa fa-chalkboard-teacher"></i> Instructor Requests
+      <span class="dot"></span>
+    </div>
+    <div class="menu-item"><i class="fa fa-users"></i> Manage Users</div>
+    <div class="menu-item"><i class="fa fa-map-marker-alt"></i> Locations</div>
+  </aside>
+
+  <script src="../script.js"></script>
+
+</body>
+
+</html>
