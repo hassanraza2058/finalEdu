@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Category Course</title>
+    <title>Withdraw Request</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -32,7 +32,7 @@
                         Website</span></a>
                 <div class="user-profile">
                     <img src="../../pages/imgs/pfp.jpg" alt="User photo">
-                    <div >
+                    <div>
                         <span class="nav-text"> Hassan </span>
                         <i class="fa-solid fa-caret-down"></i>
                     </div>
@@ -45,7 +45,7 @@
     <main class="container">
         <section class="hero-section">
             <div class="hero-section-div1">
-                <h3>Certificate Builder</h3>
+                <h3>Withdraw Request</h3>
                 <div class="div1-links">
                     <a href="">Dashboard</a>
                     <a href="">Category List </a>
@@ -53,11 +53,51 @@
             </div>
 
             <div class="hero-section-div2">
-                <div class="certificate-creator">
-                    <div class="message"></div>
-                    <div class="certificate-form"></div>
+                <input type="text" placeholder="Search" class="withdraw-input">
+                <select class="order-select">
+                    <option>Select Status</option>
+                </select>
+                <select class="order-select">
+                    <option>Order By</option>
+                </select>
+                <select class="order-select">
+                    <option>Per Page</option>
+                </select>
+            </div>
+
+            <div class="hero-section-div3">
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>SN</th>
+                                <th>User</th>
+                                <th>Method</th>
+                                <th>Current Balance</th>
+                                <th>Withdraw Amount</th>
+                                <th>Status</th>
+                                <th>Date</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><a href="#">Jason Thorne</a></td>
+                                <td>PayPal</td>
+                                <td>$220.70</td>
+                                <td>$50.00</td>
+                                <td><span class="badge pending">Pending</span></td>
+                                <td>10 Jun, 2024</td>
+                                <td>
+                                    <button class="action-btn">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div class="certificate-image"></div>
             </div>
         </section>
     </main>
@@ -91,8 +131,7 @@
             <a href="../ManageCourse/review1.html">Course Reviews</a>
             <a href="#">Course Delete Requests</a>
         </div>
-
-        <div class="menu-item "><i class="fa fa-certificate"></i> <a href="../CertificateBuilder/certificate.html">Certificate Builder</a></div>
+<div class="menu-item "><i class="fa fa-certificate"></i> <a href="../CertificateBuilder/certificate.html">Certificate Builder</a></div>
         <div class="menu-item "><i class="fa fa-id-badge"></i> <a href="../Badges/badges.html">Badges</a> </div>
         <div class="menu-item expand"><i class="fa fa-blog"></i> Manage Blogs <span class="arrow">&#9656;</span></div>
          <div class="submenu">
@@ -110,7 +149,7 @@
         </div>
 
         <div class="menu-item expand"><i class="fa fa-tags"></i> Manage Coupon <span class="arrow">&#9656;</span></div>
-         <div class="submenu">
+        <div class="submenu">
             <a href="../ManageCoupun/couponList.html">Coupon List</a>
         </div>
         
@@ -146,7 +185,6 @@
         </div>
         <div class="menu-item "><i class="fa fa-map-marker-alt"></i> Locations</div>
     </aside>
-
     <script src="../script.js"></script>
 
 </body>

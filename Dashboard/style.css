@@ -16,8 +16,9 @@ a {
 
 .container {
   position: relative;
-  max-width: 1460px;
-  height: calc(100vh - 100px);
+  left: 110px;
+  max-width: 1260px;
+  height: 100vh;
   margin: auto;
 }
 
@@ -33,11 +34,13 @@ a {
   width: 100%;
   height: 100px;
   background-color: #ff4500;
+  position: fixed;
 }
 
 .left-nav {
   display: flex;
   align-items: start;
+  margin-left: 210px;
 }
 
 .left-nav .hamburger {
@@ -89,81 +92,23 @@ a {
   font-size: 17px;
 }
 
-
-
-/* --------------------------------------------------
-   🦸 Hero Section Styles
--------------------------------------------------- */
-.hero-section {
-  height: auto;
-}
-
-.hero-section-div1 {
-  position: absolute;
-  top: -6%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 24px;
-  width: 100%;
-  min-height: 80px;
-  background-color: white;
-  box-shadow: 0px 2px 6px black;
-  border-radius: 3px;
-}
-
-.hero-section h3 {
-  font-size: 24px;
-}
-
-.hero-section .div1-links {
-  font-size: 14px;
-}
-
-.div1-links a:first-child::after {
-  content: '/';
-  margin-inline: 8px;
-}
-
-.hero-section-div2 {
-  position: absolute;
-  top: 13%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  padding: 12px 24px;
-  width: 100%;
-  height: auto;
-  background-color: white;
-  box-shadow: 0px 2px 6px black;
-  border-radius: 3px;
-  padding: 24px;
-}
-
-.hero-section-div2 select,
-.hero-section-div2 input {
-  width: 23%;
-  padding: 8px;
-}
-
-
 /* 
     CSS FOR MAIN SIDEBAR
                            */
 
-
+::-webkit-scrollbar{
+  display: none;
+}
 .sidebar {
-  width: 260px;
+  width: 220px;
   height: 100vh;
   background-color: #fff;
   padding: 20px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   overflow-y: auto;
-  position: absolute;
+  position: fixed ;
   top: 0%;
-  left: -20%;
+  left: 0%;
 }
 
 .close-menu {
@@ -183,9 +128,11 @@ a {
   color: #3b3b3b;
 }
 
-.logo {
+.logo img{
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  width: 160px;
+  height: auto;
 }
 
 .sidebar .section-title {
@@ -220,6 +167,10 @@ a {
   flex-direction: column;
 }
 
+.expand-submenu{
+  display: flex;
+}
+
 .submenu a {
   font-size: 14px;
   color: #888;
@@ -231,9 +182,6 @@ a {
   color: #007bff;
 }
 
-.menu-item.expand+.submenu {
-  display: flex;
-}
 
 .dot {
   height: 8px;
@@ -247,6 +195,69 @@ a {
 .arrow {
   margin-left: auto;
   font-size: 12px;
+  transition: transform 0.2s ease;
+}
+
+.arrow .rotate {
+  transform: rotate(180deg);
+}
+
+/* --------------------------------------------------
+   🦸 Hero Section Styles
+-------------------------------------------------- */
+.hero-section {
+  height: auto;
+}
+
+.hero-section-div1 {
+  position: absolute;
+  top: 10%;
+  /* left: 15%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  width: 100%;
+  min-height: 80px;
+  background-color: white;
+  box-shadow: 0px 2px 6px black;
+  border-radius: 3px;
+}
+
+.hero-section h3 {
+  font-size: 24px;
+}
+
+.hero-section .div1-links {
+  font-size: 14px;
+}
+
+.div1-links a:first-child::after {
+  content: '/';
+  margin-inline: 8px;
+}
+
+.hero-section-div2 {
+  position: absolute;
+  top: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 12px 24px;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  box-shadow: 0px 2px 6px black;
+  border-radius: 3px;
+  padding: 24px;
+}
+
+.hero-section-div2 select,
+.hero-section-div2 input {
+  width: 23%;
+  padding: 8px;
 }
 
 
@@ -256,7 +267,7 @@ a {
 
 .addnew-btn {
   position: absolute;
-  right: 0;
+  right: 2%;
   top: 12%;
   background-color: #ff4500;
   padding: .3rem 0.6rem;
@@ -307,7 +318,7 @@ LANGUAGE SECOND PAGE
 }
 
 /* -------------------
-           **** INSTRUCTOR BADGES CSS ****
+           **** INSTRUCTOR BADGES side bar CSS ****
                       ------------------------*/
 
 

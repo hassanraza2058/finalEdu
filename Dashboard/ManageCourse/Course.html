@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Category Course</title>
+    <title>Dashboard Course</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -31,8 +31,8 @@
                 <a href="" class="visti-website"> <i class="fa-solid fa-house"></i> <span class="nav-text">Visit
                         Website</span></a>
                 <div class="user-profile">
-                    <img src="../../pages/imgs/pfp.jpg" alt="User photo">
-                    <div >
+                    <img src="../../../pages/imgs/pfp.jpg" alt="User photo">
+                    <div>
                         <span class="nav-text"> Hassan </span>
                         <i class="fa-solid fa-caret-down"></i>
                     </div>
@@ -45,27 +45,42 @@
     <main class="container">
         <section class="hero-section">
             <div class="hero-section-div1">
-                <h3>Certificate Builder</h3>
+                <h3>Course</h3>
                 <div class="div1-links">
                     <a href="">Dashboard</a>
-                    <a href="">Category List </a>
+                    <a href="">Course List </a>
                 </div>
             </div>
 
             <div class="hero-section-div2">
-                <div class="certificate-creator">
-                    <div class="message"></div>
-                    <div class="certificate-form"></div>
-                </div>
-                <div class="certificate-image"></div>
+                <input type="text" placeholder="Search" />
+                <input type="date" placeholder="Date" />
+
+                <select>
+                    <option>Category</option>
+                </select>
+                <select>
+                    <option>Instructor</option>
+                </select>
+                <select>
+                    <option>Approval Status</option>
+                </select>
+                <select>
+                    <option>Status</option>
+
+                </select>
+                <select>
+                    <option>Order By</option>
+                </select>
+                <select>
+                    <option>Per Page</option>
+                </select>
             </div>
         </section>
     </main>
 
 
 
-
-   
     <aside class="sidebar">
         <!-- <button class="close-menu" id="close-btn">
             <i class="fa-solid fa-xmark"></i>
@@ -84,7 +99,7 @@
         </div>
 
         <div class="submenu">
-            <a href="../ManageCourse/Course.html">Courses</a>
+            <a href="Course.html">Courses</a>
             <a href="../ManageCourse/category.html">Categories</a>
             <a href="../ManageCourse/courseLanguage.html">Languages</a>
             <a href="#">Levels</a>
@@ -92,10 +107,11 @@
             <a href="#">Course Delete Requests</a>
         </div>
 
-        <div class="menu-item "><i class="fa fa-certificate"></i> <a href="../CertificateBuilder/certificate.html">Certificate Builder</a></div>
+        <div class="menu-item "><i class="fa fa-certificate"></i> <a
+                href="../CertificateBuilder/certificate.html">Certificate Builder</a></div>
         <div class="menu-item "><i class="fa fa-id-badge"></i> <a href="../Badges/badges.html">Badges</a> </div>
         <div class="menu-item expand"><i class="fa fa-blog"></i> Manage Blogs <span class="arrow">&#9656;</span></div>
-         <div class="submenu">
+        <div class="submenu">
             <a href="../ManageBlog/categoryList.html">Category List</a>
             <a href="../ManageBlog/postList.html">Post List</a>
             <a href="../ManageBlog/postComments.html">Post Comment</a>
@@ -104,28 +120,28 @@
         <div class="section-title">Manage Orders</div>
 
         <div class="menu-item expand"><i class="fa fa-box"></i> Manage Order <span class="arrow">&#9656;</span></div>
-         <div class="submenu">
+        <div class="submenu">
             <a href="../MangageOrder/orderHistory.html">Order History</a>
             <a href="../MangageOrder/pendingPayment.html">Pending Payment</a>
         </div>
 
         <div class="menu-item expand"><i class="fa fa-tags"></i> Manage Coupon <span class="arrow">&#9656;</span></div>
-         <div class="submenu">
+        <div class="submenu">
             <a href="../ManageCoupun/couponList.html">Coupon List</a>
         </div>
-        
+
         <div class="menu-item expand">
             <i class="fa fa-money-bill"></i> Withdraw Payment
             <span class="arrow">&#9656;</span>
         </div>
-          <div class="submenu">
+        <div class="submenu">
             <a href="../WithdrawPayment/withdrawMethod.html">Withdraw Method</a>
             <a href="../WithdrawPayment/withdrawRequest.html">Pending Request</a>
         </div>
 
         <div class="section-title">Manage Users</div>
 
-      <div class="menu-item expand">
+        <div class="menu-item expand">
             <i class="fa fa-chalkboard-teacher"></i> Instructor Requests
             <span class="arrow">&#9656;</span>
         </div>
@@ -133,6 +149,7 @@
             <a href="../InstructorRequest/requestList.html">Request List</a>
             <a href="../InstructorRequest/requestSettings.html">Request Settings</a>
         </div>
+        
            <div class="menu-item expand"><i class="fa fa-users"></i> Manage Users
             <span class="arrow">&#9656;</span>
         </div>

@@ -55,7 +55,7 @@
             <div class="hero-section-div2">
                 <input type="text" placeholder="Search"> 
                 <select>
-                    <option> Select Status</option>
+                    <option>Select Status</option>
 
                 </select>
                 <select>
@@ -71,10 +71,11 @@
 
 
     
+  
     <aside class="sidebar">
-        <button class="close-menu" id="close-btn">
+        <!-- <button class="close-menu" id="close-btn">
             <i class="fa-solid fa-xmark"></i>
-        </button>
+        </button> -->
 
         <div class="logo">
             <img src="../../pages/imgs/maazsterblack.png" alt="Logo" />
@@ -84,40 +85,73 @@
 
         <div class="section-title">Manage Contents</div>
 
-        <div class="menu-item expand" onclick="this.classList.toggle('expand')">
+        <div class="menu-item expand">
             <i class="fa fa-book"></i> Manage Courses <span class="arrow">&#9662;</span>
         </div>
-        
+
         <div class="submenu">
-           <a href="../DashboardCourse/DashCousrse.html">Courses</a>
-            <a href="category.html">Categories</a>
-            <a href="../courseLanguage/courseLanguage.html">Languages</a>
+            <a href="../ManageCourse/Course.html">Courses</a>
+            <a href="../ManageCourse/category.html">Categories</a>
+            <a href="../ManageCourse/courseLanguage.html">Languages</a>
             <a href="#">Levels</a>
-            <a href="../courseReview/review1.html">Course Reviews</a>
+            <a href="../ManageCourse/review1.html">Course Reviews</a>
             <a href="#">Course Delete Requests</a>
         </div>
 
-        <div class="menu-item"><i class="fa fa-certificate"></i> Certificate Builder</div>
-        <div class="menu-item"><i class="fa fa-id-badge"></i> Badges</div>
-        <div class="menu-item"><i class="fa fa-blog"></i> Manage Blogs <span class="arrow">&#9656;</span></div>
+        <div class="menu-item "><i class="fa fa-certificate"></i> <a href="../CertificateBuilder/certificate.html">Certificate Builder</a></div>
+        <div class="menu-item "><i class="fa fa-id-badge"></i> <a href="../Badges/badges.html">Badges</a> </div>
+        <div class="menu-item expand"><i class="fa fa-blog"></i> Manage Blogs <span class="arrow">&#9656;</span></div>
+         <div class="submenu">
+            <a href="../ManageBlog/categoryList.html">Category List</a>
+            <a href="../ManageBlog/postList.html">Post List</a>
+            <a href="../ManageBlog/postComments.html">Post Comment</a>
+        </div>
 
         <div class="section-title">Manage Orders</div>
 
-        <div class="menu-item"><i class="fa fa-box"></i> Manage Order <span class="arrow">&#9656;</span></div>
-        <div class="menu-item"><i class="fa fa-tags"></i> Manage Coupon <span class="arrow">&#9656;</span></div>
-        <div class="menu-item">
+        <div class="menu-item expand"><i class="fa fa-box"></i> Manage Order <span class="arrow">&#9656;</span></div>
+         <div class="submenu">
+            <a href="../MangageOrder/orderHistory.html">Order History</a>
+            <a href="../MangageOrder/pendingPayment.html">Pending Payment</a>
+        </div>
+
+        <div class="menu-item expand"><i class="fa fa-tags"></i> Manage Coupon <span class="arrow">&#9656;</span></div>
+        <div class="submenu">
+            <a href="../ManageCoupun/couponList.html">Coupon List</a>
+        </div>
+        
+        <div class="menu-item expand">
             <i class="fa fa-money-bill"></i> Withdraw Payment
-            <span class="dot"></span>
+            <span class="arrow">&#9656;</span>
+        </div>
+          <div class="submenu">
+            <a href="../WithdrawPayment/withdrawMethod.html">Withdraw Method</a>
+            <a href="../WithdrawPayment/withdrawRequest.html">Pending Request</a>
         </div>
 
         <div class="section-title">Manage Users</div>
 
-        <div class="menu-item">
+      <div class="menu-item expand">
             <i class="fa fa-chalkboard-teacher"></i> Instructor Requests
-            <span class="dot"></span>
+            <span class="arrow">&#9656;</span>
         </div>
-        <div class="menu-item"><i class="fa fa-users"></i> Manage Users</div>
-        <div class="menu-item"><i class="fa fa-map-marker-alt"></i> Locations</div>
+        <div class="submenu">
+            <a href="../InstructorRequest/requestList.html">Request List</a>
+            <a href="../InstructorRequest/requestSettings.html">Request Settings</a>
+        </div>
+
+           <div class="menu-item expand"><i class="fa fa-users"></i> Manage Users
+            <span class="arrow">&#9656;</span>
+        </div>
+         <div class="submenu">
+            <a href="../ManageUsers/allStudents.html">All Students</a>
+            <a href="../ManageUsers/instructors.html">Instructors</a>
+            <a href="../ManageUsers/activeUsers.html">Active Users</a>
+            <a href="../ManageUsers/nonVerified.html">Non Verified</a>
+            <a href="../ManageUsers/bannedUsers.html">Banned Users</a>
+            <a href="../ManageUsers/sendBulkMail.html">Send Bulk Mail</a>
+        </div>
+        <div class="menu-item "><i class="fa fa-map-marker-alt"></i> Locations</div>
     </aside>
 
     <script src="../script.js"></script>

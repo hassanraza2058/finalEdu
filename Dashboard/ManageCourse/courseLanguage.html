@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Category Course</title>
+    <title>Course Language</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -31,8 +31,8 @@
                 <a href="" class="visti-website"> <i class="fa-solid fa-house"></i> <span class="nav-text">Visit
                         Website</span></a>
                 <div class="user-profile">
-                    <img src="../../pages/imgs/pfp.jpg" alt="User photo">
-                    <div >
+                    <img src="../../../pages/imgs/pfp.jpg" alt="User photo">
+                    <div>
                         <span class="nav-text"> Hassan </span>
                         <i class="fa-solid fa-caret-down"></i>
                     </div>
@@ -45,19 +45,28 @@
     <main class="container">
         <section class="hero-section">
             <div class="hero-section-div1">
-                <h3>Certificate Builder</h3>
-                <div class="div1-links">
+                <h3>Course Language</h3>
+                <!-- <div class="div1-links">
                     <a href="">Dashboard</a>
                     <a href="">Category List </a>
-                </div>
+                </div> -->
             </div>
 
-            <div class="hero-section-div2">
-                <div class="certificate-creator">
-                    <div class="message"></div>
-                    <div class="certificate-form"></div>
-                </div>
-                <div class="certificate-image"></div>
+            <button class="addnew-btn">+ Add New</button>
+
+
+            <div class="hero-section-div2 courseLanguagediv2 ">
+                <input type="text" placeholder="Search">
+                <select>
+                    <option> Select Status</option>
+
+                </select>
+                <select>
+                    <option>Order By</option>
+                </select>
+                <select>
+                    <option>Per Page</option>
+                </select>
             </div>
         </section>
     </main>
@@ -65,7 +74,6 @@
 
 
 
-   
     <aside class="sidebar">
         <!-- <button class="close-menu" id="close-btn">
             <i class="fa-solid fa-xmark"></i>
@@ -84,7 +92,7 @@
         </div>
 
         <div class="submenu">
-            <a href="../ManageCourse/Course.html">Courses</a>
+            <a href="Course.html">Courses</a>
             <a href="../ManageCourse/category.html">Categories</a>
             <a href="../ManageCourse/courseLanguage.html">Languages</a>
             <a href="#">Levels</a>
@@ -104,21 +112,21 @@
         <div class="section-title">Manage Orders</div>
 
         <div class="menu-item expand"><i class="fa fa-box"></i> Manage Order <span class="arrow">&#9656;</span></div>
-         <div class="submenu">
+        <div class="submenu">
             <a href="../MangageOrder/orderHistory.html">Order History</a>
             <a href="../MangageOrder/pendingPayment.html">Pending Payment</a>
         </div>
 
         <div class="menu-item expand"><i class="fa fa-tags"></i> Manage Coupon <span class="arrow">&#9656;</span></div>
-         <div class="submenu">
+       <div class="submenu">
             <a href="../ManageCoupun/couponList.html">Coupon List</a>
         </div>
-        
+
         <div class="menu-item expand">
             <i class="fa fa-money-bill"></i> Withdraw Payment
             <span class="arrow">&#9656;</span>
         </div>
-          <div class="submenu">
+        <div class="submenu">
             <a href="../WithdrawPayment/withdrawMethod.html">Withdraw Method</a>
             <a href="../WithdrawPayment/withdrawRequest.html">Pending Request</a>
         </div>
