@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manage Order pendign Payment</title>
+    <title>Dashboard Course Filters</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../../style.css">
 </head>
 
 <body>
@@ -32,7 +32,7 @@
                 <button class="login-btn">Login</button>
                 <div class="user-profile">
                     <img src="../../pages/imgs/pfp.jpg" alt="User photo">
-                    <div >
+                    <div>
                         <span class="nav-text"> Hassan </span>
                         <i class="fa-solid fa-caret-down"></i>
                     </div>
@@ -45,50 +45,91 @@
     <main class="container">
         <section class="hero-section">
             <div class="hero-section-div1">
-                <h3>Pending Payment</h3>
+                <h3>Course Filters</h3>
                 <div class="div1-links">
                     <a href="">Dashboard</a>
-                    <a href="">Category List </a>
+                    <a href="">Course List </a>
                 </div>
             </div>
 
-            <div class="hero-section-div2">
-              <div class="table-container">
-    <table>
-      <thead>
-        <tr>
-          <th>SN</th>
-          <th>User</th>
-          <th>Order Id</th>
-          <th>Paid Amount</th>
-          <th>Gateway</th>
-          <th>Status</th>
-          <th>Payment</th>
-          <th>Action</th>
-        </tr>
-      </thead>
-    </table>
+            <div class="courseSub1">
+                <div class="tabs">
+                    <button class="tab active">Basic Infos</button>
+                    <button class="tab">More Infos</button>
+                    <button class="tab">Course Contents</button>
+                    <button class="tab">Finish</button>
+                </div>
 
-    <div class="no-data">
-      <img src="no-data.png" alt="No Data" />
-      <p>No data found!</p>
-    </div>
-  </div>
-            </div>
+                <form class="course-form">
+                    <div class="row">
+                        <div class="form-group">
+                            <label>Capacity</label>
+                            <input type="text" placeholder="leave blank for unlimited">
+                            <small>leave blank for unlimited</small>
+                        </div>
+                        <div class="form-group">
+                            <label>Course Duration (Minutes) <span class="required">*</span></label>
+                            <input type="number" value="3000">
+                        </div>
+                    </div>
+
+                    <div class="switches">
+                        <label>
+                            Q&A
+                            <input type="checkbox" checked>
+                            <span class="toggle"></span>
+                        </label>
+                        <label>
+                            Completion Certificate
+                            <input type="checkbox" checked>
+                            <span class="toggle"></span>
+                        </label>
+                        <label>
+                            Partner Instructor
+                            <input type="checkbox">
+                            <span class="toggle"></span>
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Category <span class="required">*</span></label>
+                        <select>
+                            <option value="seo">SEO</option>
+                        </select>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group checkbox-group">
+                            <label>Level</label>
+                            <label><input type="checkbox"> Beginner</label>
+                            <label><input type="checkbox" checked> Intermediate</label>
+                            <label><input type="checkbox"> Expert</label>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <label>Language</label>
+                            <label><input type="checkbox"> English</label>
+                            <label><input type="checkbox"> Hindi</label>
+                            <label><input type="checkbox" checked> Arabic</label>
+                            <label><input type="checkbox"> Francais</label>
+                            <label><input type="checkbox"> Portugues</label>
+                        </div>
+                    </div>
+
+                    <button class="save-btn" type="submit">Save</button>
+                </form>
+
         </section>
     </main>
 
 
 
-    
-    
     <aside class="sidebar">
         <!-- <button class="close-menu" id="close-btn">
             <i class="fa-solid fa-xmark"></i>
         </button> -->
 
         <div class="logo">
-            <img src="../../pages/imgs/maazsterblack.png" alt="Logo" />
+            <img src="../../../pages/imgs/maazsterblack.png" alt="Logo" />
         </div>
 
         <div class="menu-item"><i class="fa fa-home"></i> <a href="../dashbord.html">Dashboard</a></div>
@@ -100,7 +141,7 @@
         </div>
 
         <div class="submenu">
-            <a href="../ManageCourse/Course.html">Courses</a>
+            <a href="Course.html">Courses</a>
             <a href="../ManageCourse/category.html">Categories</a>
             <a href="../ManageCourse/courseLanguage.html">Languages</a>
             <a href="#">Levels</a>
@@ -108,10 +149,11 @@
             <a href="#">Course Delete Requests</a>
         </div>
 
-       <div class="menu-item "><i class="fa fa-certificate"></i> <a href="../CertificateBuilder/certificate.html">Certificate Builder</a></div>
+        <div class="menu-item "><i class="fa fa-certificate"></i> <a
+                href="../CertificateBuilder/certificate.html">Certificate Builder</a></div>
         <div class="menu-item "><i class="fa fa-id-badge"></i> <a href="../Badges/badges.html">Badges</a> </div>
         <div class="menu-item expand"><i class="fa fa-blog"></i> Manage Blogs <span class="arrow">&#9656;</span></div>
-         <div class="submenu">
+        <div class="submenu">
             <a href="../ManageBlog/categoryList.html">Category List</a>
             <a href="../ManageBlog/postList.html">Post List</a>
             <a href="../ManageBlog/postComments.html">Post Comment</a>
@@ -120,7 +162,7 @@
         <div class="section-title">Manage Orders</div>
 
         <div class="menu-item expand"><i class="fa fa-box"></i> Manage Order <span class="arrow">&#9656;</span></div>
-         <div class="submenu">
+        <div class="submenu">
             <a href="../MangageOrder/orderHistory.html">Order History</a>
             <a href="../MangageOrder/pendingPayment.html">Pending Payment</a>
         </div>
@@ -129,19 +171,19 @@
         <div class="submenu">
             <a href="../ManageCoupun/couponList.html">Coupon List</a>
         </div>
-        
+
         <div class="menu-item expand">
             <i class="fa fa-money-bill"></i> Withdraw Payment
             <span class="arrow">&#9656;</span>
         </div>
-          <div class="submenu">
+        <div class="submenu">
             <a href="../WithdrawPayment/withdrawMethod.html">Withdraw Method</a>
             <a href="../WithdrawPayment/withdrawRequest.html">Pending Request</a>
         </div>
 
         <div class="section-title">Manage Users</div>
 
-      <div class="menu-item expand">
+        <div class="menu-item expand">
             <i class="fa fa-chalkboard-teacher"></i> Instructor Requests
             <span class="arrow">&#9656;</span>
         </div>
@@ -149,10 +191,11 @@
             <a href="../InstructorRequest/requestList.html">Request List</a>
             <a href="../InstructorRequest/requestSettings.html">Request Settings</a>
         </div>
-           <div class="menu-item expand"><i class="fa fa-users"></i> Manage Users
+
+        <div class="menu-item expand"><i class="fa fa-users"></i> Manage Users
             <span class="arrow">&#9656;</span>
         </div>
-         <div class="submenu">
+        <div class="submenu">
             <a href="../ManageUsers/allStudents.html">All Students</a>
             <a href="../ManageUsers/instructors.html">Instructors</a>
             <a href="../ManageUsers/activeUsers.html">Active Users</a>
@@ -167,6 +210,7 @@
             <a href="../Locations/countries.html">Countries</a>
         </div>
     </aside>
+
     <script src="../script.js"></script>
 
 </body>

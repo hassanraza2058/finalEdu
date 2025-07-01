@@ -28,10 +28,10 @@
                 </select>
             </div>
             <div class="right-nav">
-                <a href="" class="visti-website"> <i class="fa-solid fa-house"></i> <span class="nav-text">Visit
-                        Website</span></a>
+                <a href="../../index.html" class="visti-website"> <i class="fa-solid fa-house"></i> <span class="nav-text">Visit Website</span></a>
+                <button class="login-btn">Login</button>
                 <div class="user-profile">
-                    <img src="../../../pages/imgs/pfp.jpg" alt="User photo">
+                    <img src="../../pages/imgs/pfp.jpg" alt="User photo">
                     <div>
                         <span class="nav-text"> Hassan </span>
                         <i class="fa-solid fa-caret-down"></i>
@@ -76,6 +76,11 @@
                     <option>Per Page</option>
                 </select>
             </div>
+
+            <div class="adding-course-container">
+                <span class="title">Courses List</span>
+                <button class="add-btn">+ Add New</button>
+            </div>
         </section>
     </main>
 
@@ -90,7 +95,7 @@
             <img src="../../pages/imgs/maazsterblack.png" alt="Logo" />
         </div>
 
-        <div class="menu-item"><i class="fa fa-home"></i> Dashboard</div>
+        <div class="menu-item"><i class="fa fa-home"></i> <a href="../dashbord.html">Dashboard</a></div>
 
         <div class="section-title">Manage Contents</div>
 
@@ -149,11 +154,11 @@
             <a href="../InstructorRequest/requestList.html">Request List</a>
             <a href="../InstructorRequest/requestSettings.html">Request Settings</a>
         </div>
-        
-           <div class="menu-item expand"><i class="fa fa-users"></i> Manage Users
+
+        <div class="menu-item expand"><i class="fa fa-users"></i> Manage Users
             <span class="arrow">&#9656;</span>
         </div>
-         <div class="submenu">
+        <div class="submenu">
             <a href="../ManageUsers/allStudents.html">All Students</a>
             <a href="../ManageUsers/instructors.html">Instructors</a>
             <a href="../ManageUsers/activeUsers.html">Active Users</a>
@@ -161,7 +166,14 @@
             <a href="../ManageUsers/bannedUsers.html">Banned Users</a>
             <a href="../ManageUsers/sendBulkMail.html">Send Bulk Mail</a>
         </div>
-        <div class="menu-item "><i class="fa fa-map-marker-alt"></i> Locations</div>
+
+        <div class="menu-item expand"><i class="fa fa-map-marker-alt"></i> Locations
+            <span class="arrow">&#9656;</span>
+        </div>
+        <div class="submenu">
+            <a href="../Locations/countries.html">Countries</a>
+        </div>
+        
     </aside>
 
     <script src="../script.js"></script>

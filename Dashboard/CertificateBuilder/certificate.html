@@ -28,11 +28,11 @@
                 </select>
             </div>
             <div class="right-nav">
-                <a href="" class="visti-website"> <i class="fa-solid fa-house"></i> <span class="nav-text">Visit
-                        Website</span></a>
+                <a href="../../index.html" class="visti-website"> <i class="fa-solid fa-house"></i> <span class="nav-text">Visit Website</span></a>
+                <button class="login-btn">Login</button>
                 <div class="user-profile">
                     <img src="../../pages/imgs/pfp.jpg" alt="User photo">
-                    <div >
+                    <div>
                         <span class="nav-text"> Hassan </span>
                         <i class="fa-solid fa-caret-down"></i>
                     </div>
@@ -54,10 +54,49 @@
 
             <div class="hero-section-div2">
                 <div class="certificate-creator">
-                    <div class="message"></div>
-                    <div class="certificate-form"></div>
+                    <div class="note">
+                        ⚠️ There are bunch of handy tags you can use, like
+                        <code>[student_name]</code>, <code>[platform_name]</code>,
+                        <code>[course]</code>, <code>[date]</code>, <code>[instructor_name]</code>.
+                        Feel free to use them anywhere in your titles, subtitles or description.
+                    </div>
+
+                    <div class="card">
+                        <h2>Certificate Details</h2>
+
+                        <div class="form-group">
+                            <label>Background Image <span>( 930px × 600px )</span> <span
+                                    class="required">*</span></label>
+                            <div class="image-box">
+                                <img src="certificate.png" alt="Certificate Template" />
+                                <button>IMAGE</button>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="title">Title</label>
+                            <input type="text" id="title" placeholder="[student_name]" class="certificate-input" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subtitle">Sub Title</label>
+                            <input type="text" id="subtitle" placeholder="For completing [course]"
+                                class="certificate-input" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <textarea id="description" rows="2"
+                                class="certificate-input">This certificate is awarded to recognize the successful completion of the course [course] offered on the platform [platform_name]</textarea>
+                        </div>
+                    </div>
                 </div>
-                <div class="certificate-image"></div>
+
+                <div class="certificate-image">
+                    <h5>Background size will be (930px*600px)</h5>
+                    <img src="" alt="Certificate-Image">
+                </div>
+
             </div>
         </section>
     </main>
@@ -65,7 +104,7 @@
 
 
 
-   
+
     <aside class="sidebar">
         <!-- <button class="close-menu" id="close-btn">
             <i class="fa-solid fa-xmark"></i>
@@ -75,7 +114,7 @@
             <img src="../../pages/imgs/maazsterblack.png" alt="Logo" />
         </div>
 
-        <div class="menu-item"><i class="fa fa-home"></i> Dashboard</div>
+        <div class="menu-item"><i class="fa fa-home"></i> <a href="../dashbord.html">Dashboard</a></div>
 
         <div class="section-title">Manage Contents</div>
 
@@ -92,10 +131,11 @@
             <a href="#">Course Delete Requests</a>
         </div>
 
-        <div class="menu-item "><i class="fa fa-certificate"></i> <a href="../CertificateBuilder/certificate.html">Certificate Builder</a></div>
+        <div class="menu-item "><i class="fa fa-certificate"></i> <a
+                href="../CertificateBuilder/certificate.html">Certificate Builder</a></div>
         <div class="menu-item "><i class="fa fa-id-badge"></i> <a href="../Badges/badges.html">Badges</a> </div>
         <div class="menu-item expand"><i class="fa fa-blog"></i> Manage Blogs <span class="arrow">&#9656;</span></div>
-         <div class="submenu">
+        <div class="submenu">
             <a href="../ManageBlog/categoryList.html">Category List</a>
             <a href="../ManageBlog/postList.html">Post List</a>
             <a href="../ManageBlog/postComments.html">Post Comment</a>
@@ -104,28 +144,28 @@
         <div class="section-title">Manage Orders</div>
 
         <div class="menu-item expand"><i class="fa fa-box"></i> Manage Order <span class="arrow">&#9656;</span></div>
-         <div class="submenu">
+        <div class="submenu">
             <a href="../MangageOrder/orderHistory.html">Order History</a>
             <a href="../MangageOrder/pendingPayment.html">Pending Payment</a>
         </div>
 
         <div class="menu-item expand"><i class="fa fa-tags"></i> Manage Coupon <span class="arrow">&#9656;</span></div>
-         <div class="submenu">
+        <div class="submenu">
             <a href="../ManageCoupun/couponList.html">Coupon List</a>
         </div>
-        
+
         <div class="menu-item expand">
             <i class="fa fa-money-bill"></i> Withdraw Payment
             <span class="arrow">&#9656;</span>
         </div>
-          <div class="submenu">
+        <div class="submenu">
             <a href="../WithdrawPayment/withdrawMethod.html">Withdraw Method</a>
             <a href="../WithdrawPayment/withdrawRequest.html">Pending Request</a>
         </div>
 
         <div class="section-title">Manage Users</div>
 
-      <div class="menu-item expand">
+        <div class="menu-item expand">
             <i class="fa fa-chalkboard-teacher"></i> Instructor Requests
             <span class="arrow">&#9656;</span>
         </div>
@@ -133,10 +173,10 @@
             <a href="../InstructorRequest/requestList.html">Request List</a>
             <a href="../InstructorRequest/requestSettings.html">Request Settings</a>
         </div>
-           <div class="menu-item expand"><i class="fa fa-users"></i> Manage Users
+        <div class="menu-item expand"><i class="fa fa-users"></i> Manage Users
             <span class="arrow">&#9656;</span>
         </div>
-         <div class="submenu">
+        <div class="submenu">
             <a href="../ManageUsers/allStudents.html">All Students</a>
             <a href="../ManageUsers/instructors.html">Instructors</a>
             <a href="../ManageUsers/activeUsers.html">Active Users</a>
@@ -144,7 +184,14 @@
             <a href="../ManageUsers/bannedUsers.html">Banned Users</a>
             <a href="../ManageUsers/sendBulkMail.html">Send Bulk Mail</a>
         </div>
-        <div class="menu-item "><i class="fa fa-map-marker-alt"></i> Locations</div>
+
+        <div class="menu-item expand"><i class="fa fa-map-marker-alt"></i> Locations
+            <span class="arrow">&#9656;</span>
+        </div>
+        <div class="submenu">
+            <a href="../Locations/countries.html">Countries</a>
+        </div>
+
     </aside>
 
     <script src="../script.js"></script>
